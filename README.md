@@ -74,6 +74,14 @@ The innovation is not in creating new technologies but in combining and optimizi
 
 <br>
 
+## Why does this app only support MacOS?
+
+- Privacy is critical in medical applications. MacOS supports privacy and user agency. It doesn't force downloads or insist on internet connection in order to work.
+- Base spec silicon Macs (256 GB storeage, 16 GB RAM, 1000 USD cost) are able to run the MedGemma model at a token speed that's fast enough to be useful.
+- Silicon Macs have battery life that's greater than 12 hours. This is important because running Ollama locally uses alot of battery power.
+
+<br>
+
 
 ## How to Install and Run
 
@@ -84,19 +92,26 @@ In this section you will do the following:
 - Download an Ollama model
 - Install the UV Python package manager
 - Install ffmeg
-- Start the myOfflineAi app by double clicking a file
-
-Notes:<br>
-- I tested the installation process on MacOS. Although I've included instructions for Windows, I haven't tested on Windows.
-- After setup, you only need to double-click a file to launch the app.
-
-System Requirements:
-- Computer: Apple Silicon Mac (M-series) with minimum 16GB RAM - or equivalent
-- Free disk space: approx. 10 GB
+- Start the app by double clicking a file
 
 <br>
 
 ```
+--------------------------------------------------------------
+System Requirements
+--------------------------------------------------------------
+
+Operating System: macOS
+Computer: Apple Silicon Mac (M1, M2, M3, M4)
+RAM: 16GB
+Free disk Space: 10 GB
+
+--------------------------------------------------------------
+Step-by-Step Setup
+--------------------------------------------------------------
+
+If you already have Ollama, UV and ffmeg installed then please skip those steps.
+
 
 1. Download and install the Ollama desktop application
 --------------------------------------------------------------
@@ -105,133 +120,84 @@ This is the link to download Ollama. After downloading, please install it on you
 Then launch it. A white chat window will open.
 https://ollama.com/
 
-Normally, Ollama will launch automatically when you start your computer.
+Ollama launches automatically when you start your computer.
 
 
-2. Download an Ollama model
---------------------------------------------------------------
+2. Download the MedGemma-1 GGUF model from Huggingface (7.77 GB)
+----------------------------------------------------------------
 
-1. Open the Ollama desktop app.
-2. Paste the model name (e.g. gemma3:270m) into the dropdown in the bottom right.
-3. Type any message e.g. Hi, and press Enter
-4. The model will start to auto download.
+1. Open the terminal on your Mac
+2. Paste in this line and press Enter:
+ollama run hf.co/unsloth/medgemma-4b-it-GGUF:BF16
 
-If you have a fast internet connection then I suggest you download
-the gemma3:4b model (3.3GB).
-This model can handle both text and images.
-If you have a slow connection then download the smaller gemma3:270m model (292MB).
-This model can handle text only.
 
+Optional:
+If you also want to download MedGemma-1.5 GGUF (7.77 GB), use this command:
+ollama run hf.co/unsloth/medgemma-1.5-4b-it-GGUF:BF16
 
 3. Install ffmpeg
 --------------------------------------------------------------
 
-# on MacOS using Homebrew (https://brew.sh/)
+# Use Homebrew (https://brew.sh/)
+
+1. Open the terminal on your Mac
+2. Paste in this line and press Enter:
 brew install ffmpeg
 
-# on Windows using Chocolatey (https://chocolatey.org/)
-choco install ffmpeg
 
-# on Windows using Scoop (https://scoop.sh/)
-scoop install ffmpeg
+4. Install UV
+--------------------------------------------------------------
+
+Paste this command into the terminal and press Enter:
+wget -qO- https://astral.sh/uv/install.sh | sh
 
 
-4. Download the project folder and place it on your desktop
+5. Download the project folder and place it on your desktop
 --------------------------------------------------------------
 
 1. On GitHub click on "<> Code". The select "Download Zip"
 2. Download the project folder and unzip it.
-3. Inside you will find a folder named: myOfflineAi-ChatConsole-v3.0
-4. Place myOfflineAi-ChatConsole-v3.0 on your desktop.
+3. Inside you will find a folder named: MedAi-Console-v1.0
+4. Place MedAi-Console-v1.0 on your desktop.
 
 
-5. Initial Setup
+5. Install the App
 --------------------------------------------------------------
 
-[ macOS ]
-------------
-
-(Skip steps 1-3 if you have uv already installed.)
-
-1. Open Terminal (Command+Space, type "Terminal")
-2. Paste this command into the terminal to install uv:
-
-wget -qO- https://astral.sh/uv/install.sh | sh
-
-3. Wait for uv installation to finish
-
-4. Type 'cd ' in the terminal (with a space after cd)
-5. Drag the folder into the Terminal window. A file path will appear.
-6. Press Enter
-If you get an error, then type in these commands in the terminal to manually cd into myOfflineAi-ChatConsole-v3.0 folder:
+1. cd into MedAi-Console-v1.0 folder:
 cd Desktop
-cd myOfflineAi-ChatConsole-v3.0
+cd MedAi-Console-v1.0
 
-7. Paste this command into the terminal:
-
+7. Paste this command into the terminal and press Enter
 cat start-mac-app.command > temp && mv temp start-mac-app.command && chmod +x start-mac-app.command
 
-8. Press Enter
-9. Open the myOfflineAi-ChatConsole-v3.0 folder
-10. Double-click: start-mac-app.command
+8. Open the MedAi-Console-v1.0 folder
+9. Double click this file: start-mac-app.command
+10. The app will auto download all requirements and then open in your browser.
 
 
-[ Windows ]
-------------
-
-(Skip steps 1-6 if you have uv already installed.)
-
-1. Press the Windows key on your keyboard
-2. Type cmd and press Enter (a black window will open)
-3. Copy this entire command:
-
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-
-4. Right-click in the black window to paste
-5. Press Enter
-6. Wait for "uv installed successfully" or similar message
-
-7. Close the window and open a new one for the changes to take effect
-8. Navigate to the myOfflineAi-ChatConsole-v3.0 folder that's on your desktop
-9. Double-click: start-windows-app.bat
-
-If Windows shows a security warning:
-1. Right-click on start-windows-app.bat 
-2. Select "Properties"
-3. Check the "Unblock" box at the bottom
-4. Click "OK"
-5. Now double-click start-windows-app.bat to run
-
-
-6. Use the app
 --------------------------------------------------------------
-
-Click "Ai Assistant" in the left panel.
-Type a message. The assistant will respond with both voice and text.
-To use voice input: Click the mic icon, then speak.
+Using the App
+--------------------------------------------------------------
 
 The name of the model you downloaded will appear in the dropdown menu in the top left.
-If you downloaded the gemma3:4b model you can submit images and pdf documents in addition to text.
+You can submit images and pdf documents in addition to text.
 
-The app does not stop running when you close the browser tab.
-To shut down the app simply close the terminal window.
-You can also close the terminal by selecting it and typing Ctrl+C on Mac or Ctrl+C on Windows.
-
-The Ai voice is turned on by default. You can turn it off in Voice Settings.
+You can also talk to the Ai model by clicking on the Mic icon.
+The Ai voice is turned off by default. You can turn it on in Voice Settings.
 Any changes you make to the settings will be automatically saved.
 
+The app does not stop running when you close the browser tab.
+To shut down the app, close the terminal window.
+You can also close the terminal by selecting it and typing Ctrl+C on Mac.
 
-7. Future startup
+
+--------------------------------------------------------------
+Future startup
 --------------------------------------------------------------
 
-Now that the setup is complete, in future simply Double-click a file to launch the app.
+Now that the setup is complete, in future simply double-click the start-mac-app.command file to launch the app.
 The project folder must be placed on your desktop before the app is launched.
-
-Mac:
-start-mac-app.command
-
-Windows:
-start-windows-app.bat
 
 You could start the app and leave it running in the background all day.
 Then whenever you want to use it, enter the following url in your browser:
@@ -241,22 +207,29 @@ http://127.0.0.1:5000/
 Your browser will remember this local address so you won't have to.
 
 
-Quick Troubleshooting
 --------------------------------------------------------------
-- If the app doesn't start, make sure Ollama is running (look for its icon in your system tray/menu bar)
-- If you see "connection refused", restart Ollama
-- Make sure you've downloaded at least one model in Ollama before using the app
-- For the voice (TTS) to work Kokoro needs two files: kokoro-v1.0.onnx, and voices-v1.0.bin
-  These files are auto downloaded during the setup process.
-However, if the voice is not working then please download these files manually and place them in the project folder:
-kokoro-v1.0.onnx: https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
-voices-v1.0.bin: https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
-- If there text generation is working, but the voice is not working - try reducing the context size.
+Troubleshooting
+--------------------------------------------------------------
 
-Tips
+If the app doesn't start, make sure Ollama is running (look for its icon in your menu bar)
+If you see "connection refused", restart Ollama
+Inference time will increase as you increase the context size setting.
+Inference time will be longer when submitting large images or pdf files.
+For the voice (TTS) to work Kokoro needs two files: kokoro-v1.0.onnx, and voices-v1.0.bin. These files are auto downloaded during the setup process. However, if the voice is not working then please download these files manually and place them in the project folder:
+
+kokoro-v1.0.onnx: https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+
+voices-v1.0.bin: https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+
+
 --------------------------------------------------------------
-- When creating agents/tools that will generate math notation, you need to tell the agent to use LaTeX when generating math notation. Please add this note to the system message: Use LaTeX notation for mathematical or scientific expressions only.
-- For best results when using your voice - use a headset or earphones with a mic. This reduces background noise. It also allows for a more relaxed chat because you won't have to constantly strain to be clearly heard by the speech to text system.
+Notes
+--------------------------------------------------------------
+
+When creating agents/tools that will generate math notation, you need to tell the agent to use LaTeX when generating math notation. Please add this note to the system message: Use LaTeX notation for mathematical or scientific expressions only.
+For best results when using your voice - use a headset or earphones with a mic. This reduces background noise. It also allows for a more relaxed chat because you won't have to constantly focus on being clearly heard by the speech to text system.
+Because MedGemma-1.5 is a reasoning model, I've set up the app to disable voice output when the MedGemma-1.5 model is selected.
+
 ```
 <br>
 
