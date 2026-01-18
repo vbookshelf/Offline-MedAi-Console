@@ -199,7 +199,8 @@ You can also close the terminal by selecting it and typing Ctrl+C on Mac.
 Future startup
 --------------------------------------------------------------
 
-Now that the setup is complete, in future simply double-click the start-mac-app.command file to launch the app.
+Now that the setup is complete, in future simply double-click the start-mac-app.command file
+to launch the app.
 The project folder must be placed on your desktop before the app is launched.
 
 You could start the app and leave it running in the background all day.
@@ -218,7 +219,10 @@ If the app doesn't start, make sure Ollama is running (look for its icon in your
 If you see "connection refused", restart Ollama
 Inference time will increase as you increase the context size setting.
 Inference time will be longer when submitting large images or pdf files.
-For the voice (TTS) to work Kokoro needs two files: kokoro-v1.0.onnx, and voices-v1.0.bin. These files are auto downloaded during the setup process. However, if the voice is not working then please download these files manually and place them in the project folder:
+For the voice (TTS) to work Kokoro needs two files: kokoro-v1.0.onnx, and voices-v1.0.bin.
+These files are auto downloaded during the setup process.
+However, if the voice is not working then please download these files manually and
+place them in the project folder:
 
 kokoro-v1.0.onnx: https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
 
