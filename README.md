@@ -56,8 +56,7 @@ The innovation is not in creating new technologies but in combining and optimizi
 - <strong>Self-Contained Single-File Architecture:</strong> The entire application logic is contained in a single file. This design offers two major benefits: it provides a low barrier for tinkering and Ai modification, and more importantly, it makes the codebase easy to audit for security and privacy.
 - <strong>"Double-Click to Run" Accessibility:</strong> Through simple .bat (Windows) and .command (macOS) scripts, the application can be launched without needing to use the command line, making it accessible to non-programmers and enthusiasts alike.
 - <strong>High-Performance Hybrid Network:</strong> The app intelligently uses both HTTP and WebSockets. HTTP provides robust handling for file uploads, while WebSockets enable a real-time, low-latency connection for streaming AI responses and audio.
-- <strong>Instant Audio with Sentence-by-Sentence TTS:</strong> Instead of waiting for the AI to generate its full response, text-to-speech audio begins playing sentence by sentence, creating a much more fluid and natural conversational experience.
-- <strong>Ephemeral Data Processing:</strong> User-uploaded images and PDFs are processed entirely in-memory and are never permanently saved to your disk.
+- <strong>Fast Audio with Sentence-by-Sentence TTS:</strong> Instead of waiting for the AI to generate its full response, text-to-speech audio begins playing sentence by sentence, creating a much more fluid and natural conversational experience.
 
 
 <br>
@@ -234,52 +233,6 @@ For best results when using your voice - use a headset or earphones with a mic. 
 Because MedGemma-1.5 is a reasoning model, I've set up the app to disable voice output when the MedGemma-1.5 model is selected.
 
 ```
-<br>
-
-## Detailed writeup
-
-A detailed writeup for a similar project, including trouble-shooting info, is available here:<br>
-https://github.com/vbookshelf/myOfflineAi-PrivacyFirst
-
-<br>
-
-## What Files are Created during operation?
-
-<br>
-
-The application is designed to be self-contained and stores all its configuration and data in the same directory it is run from.
-
-### Persistent Configuration and Data Files
-These files store your settings and history and remain on your disk between sessions.
-
-1. agents.json<br>
-- <strong>Purpose:</strong> This is a crucial file that stores all the custom "AI Tools" (or agents) that you create. It saves their names, titles, system personas, conversation type (single-turn/multi-turn), and any model settings you've specifically configured for them.<br>
-- <strong>Lifecycle:</strong> It is automatically created on the first run if it doesn't exist, pre-populated with the default "Ai Assistant." It is read on startup and written to whenever you create, edit, reorder, or delete an AI Tool.
-
-2. conversations.json.<br>
-- <strong> Purpose:</strong> This file saves your complete chat history. Each conversation is stored as a separate entry, linked to the specific AI Tool you were using at the time..<br>
-- <strong> Lifecycle:</strong> This file is created after your first conversation is completed. It is updated at the end of every chat session to save the new messages.
-
-3. user_settings.json.<br>
-- <strong>Purpose:</strong> This file stores your global settings. This includes the default model parameters (temperature, context size, etc.), your voice preferences (language, voice, speed), and other UI-related settings like the PDF page limit. These are the settings that apply to the default "Ai Assistant" and serve as the base for new AI Tools..<br>
-- <strong>Lifecycle:</strong> It is created on the first run if it doesn't exist, populated with the application's default values. It is updated any time you change these settings in the sidebar.
-
-3. last_model.txt.<br>
-- <strong>Purpose:</strong> A very simple text file that contains only the name of the last Ollama model you selected from the dropdown menu..<br>
-- <strong>Lifecycle:</strong> It is created or overwritten every time you select a different model. This ensures the application remembers your preferred model for your next session.
-
-### Temporary Files
-This category includes files that are created for a specific, brief task and are deleted automatically.
-
-temp_recording.wav.<br>
-- <strong>Purpose:</strong> To temporarily store the raw audio data from your microphone when using the speech-to-text feature..<br>
-- <strong>Lifecycle:</strong> This file is ephemeral. It is created the moment you stop speaking, is immediately fed to the Whisper model for transcription, and is then instantly and automatically deleted. It only exists on your disk for a fraction of a second during the transcription process.
-
-### What is Not Saved to Disk
-Uploaded Images and PDFs: All user-uploaded files (.jpg, .png, .pdf, etc.) are processed entirely in-memory. They are converted to a Base64 format, sent to the model, and are never written to or saved on your hard drive.
-
-### Agent profile pictures
-The agent profile pictures that you upload are stored in a folder named agent_avatars. The profile image is deleted when an agent is deleted.
 
 
 <br>
