@@ -76,9 +76,9 @@ The innovation is not in creating new technologies but in combining and optimizi
 
 ## Why does this app only support MacOS?
 
-- Privacy is critical in medical applications. MacOS supports privacy and user agency. It doesn't force downloads or insist on internet connection in order to work.
+- Privacy is critical in medical applications. MacOS inspires trust because it's reliable and supports both privacy and user agency.
 - Base spec silicon Macs (256 GB storeage, 16 GB RAM, 1000 USD cost) are able to run the MedGemma model at a token speed that's fast enough to be useful.
-- Silicon Macs have battery life that's greater than 12 hours. This is important because running Ollama locally uses alot of battery power.
+- Silicon Macs have battery life that's greater than 12 hours. This is important for a good user exerience, because running Ollama locally uses alot of battery power.
 
 <br>
 
