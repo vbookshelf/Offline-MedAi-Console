@@ -254,52 +254,16 @@ Because MedGemma-1.5 is a reasoning model, I've set up the app to disable voice 
 - When using the voice chat it helps to wear a headset or use earphones with a mic. The voice detection system is quite simple so it won't work well if there's alot of background noise.
 - When setting up a tool (specialized assistant) that uses voice, it helps to tell it (in the system message) not to use markdown - or else the Ai will speak the markdown symbols out loud. 
 - Whisper is an LLM, and it can hallucinate. It sometimes generates random text like "Thank you for watching!". This text then gets converted in to speech.
-- Not all parameters are supported by all models. I found that Qwen3 Ollama models would not work if a repeat_penalty parameter was passed to the model. To make the app more robust I've only used parameters that are likely to be supported by the vast majority of models - temperature, context size, top_p.
-- Small quantized local models are not yet trustworthy enough to be used for mission critical tasks. They are good for tasks that don't require precise answers like brainstorming and creative writing, or for tasks where a user can quickly check the accuracy of the output.
-- I found that the gemma3:12b 4 bit quantized model (8.1 GB) works well. It's fast, has a high level of intelligence and can handle both text and images. 
 - At first glance the single-file architecture may look like a naive simplification created for non-technical users and for easy auditing - but it's much more. It's an architecture pattern that's optimized for AI-assisted development - a "see the entire picture at once" pattern that supports fast and efficient Human + Ai collaboration.
-
-
-
-<br>
-
-## App Family - Offline-First, Privacy-First, Transparent
-
-- myOfflineAi-PrivacyFirst<br>(Maximum security. No chat history is saved.)<br>
-  https://github.com/vbookshelf/myOfflineAi-PrivacyFirst<br>
-- myOfflineAi-ChatHistory<br>(Saves chats to a local file you control.)<br>
-  https://github.com/vbookshelf/myOfflineAi-ChatHistory<br>
-- Chat-Image-Marker<br>(A simple, offline tool for marking up images.)<br>
-  https://github.com/vbookshelf/Chat-Image-Marker<br>
-- myOfflineAi-VoiceAssistant<br>(An offline full-featured Ai voice assistant.)<br>
-  https://github.com/vbookshelf/myOfflineAi-VoiceAssistant<br>
--  myOfflineAi-ChatConsole<br>(Desktop multimodal chat console that supports both text chat and voice chat.)<br>
-  https://github.com/vbookshelf/myOfflineAi-ChatConsole
 
 
 <br>
 
 ## Revision History
 
-Version 3.0<br>
-28-Oct-2025<br>
-Changed the UI.<br>
-Added a toolbox.<br>
-Added agent profile picture feature.
-
-Version 2.0<br>
-26-Oct-2025<br>
-Implemented a more robust hybrid network architecture - HTTP and WebSockets.<br>
-Fixed error with Qwen models.<br>
-Removed model parameters that are not supported by all models.
-
-Version 1.1<br>
-21-Oct-2025<br>
-Enabled flash attention and q_8 context caching to speed up inference.
-
 Version 1.0<br>
-17-Oct-2025<br>
-Prototype. Released for testing and education.
+1-Feb-2026<br>
+Prototype. Released for demonstration.
 
 <br>
 
