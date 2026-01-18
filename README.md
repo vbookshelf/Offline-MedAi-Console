@@ -3,24 +3,27 @@
 > 
 > Prototype - For demonstration, education and inspiration
 
-YouTube Video:<br>
-myOfflineAi - A Local Text and Voice Chat Ai Console powered by Ollama, Whisper and Kokoro<br>
-https://www.youtube.com/watch?v=LOndd7MpdCs
+<img src="images/image1.png" alt="App screenshot" height="300">
 
 
 <br>
 
 The MedAi Console is a transparent, offline-first and privacy-first multimodal Ai console where clinicians can talk, type, show images, adjust parameters and create Ai tools. Uses Flask for the backend, Whisper for Speech-to-Text (STT), Kokoro for Text-to-Speech (TTS), and Ollama to serve the Large Language Model (LLM). The app is powered by Google's MedGemma model.
 
-It’s a multi-disciplinary and multi-lingual virtual colleague that helps clinicians review documents, brainstorm ideas, generate hypotheses, challenge assumptions, and accelerate understanding. It gives clinicians a private and secure place to think clearly and quickly about difficult problems.
+It’s a multi-disciplinary and multi-lingual virtual colleague that helps clinicians review documents, brainstorm ideas, generate hypotheses, challenge assumptions, and learn fast. It gives clinicians a private and secure place to think clearly and quickly about difficult problems.
 
-In other words, instead of taking the MedGemma model and using it to create a single task application, like an x-ray classification app, what I’ve done is take the model and put it into the hands of the user. The MedAI Console is an offline platform that  gives clinicians the privacy and flexibility to experiment with the model and decide how they want to use it. This could lead to some novel applications that programmers could never have imagined.
+In other words, instead of taking the MedGemma model and using it to create a single task application, like an x-ray classification app, what I’ve done is take the model and put it into the hands of the user. The MedAi Console is an offline platform that  gives clinicians the privacy and flexibility to experiment with the model and decide how they want to use it. This could lead to some novel applications that programmers could never have imagined.
 
+<br>
+
+YouTube Video:<br>
+myOfflineAi - A Local Text and Voice Chat Ai Console powered by Ollama, Whisper and Kokoro<br>
+https://www.youtube.com/watch?v=LOndd7MpdCs
 
 <br>
 
 
-<img src="images/image1.png" alt="App screenshot" height="500">
+<img src="images/image1x.png" alt="App screenshot" height="500">
 <p>Minimalist UI</p>
 
 <br>
