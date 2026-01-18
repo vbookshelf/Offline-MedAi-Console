@@ -1,5 +1,5 @@
 # Offline Multimodal MedAi Console
-<strong>A truly offline text and voice medical Ai console powered by MedGema</strong>
+<strong>A truly offline text and voice medical Ai console powered by MedGemma</strong>
 > 
 > Prototype - For demonstration, education and inspiration
 
