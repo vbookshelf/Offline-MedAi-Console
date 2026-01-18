@@ -36,6 +36,7 @@ https://www.youtube.com/watch?v=LOndd7MpdCs
 <br>
 
 - <strong>100% Offline and Private:</strong> Your conversations and data never leave your local machine.
+- - <strong>Fully Transparent:</strong> All code files are accessible for review. No black-box executables or proprietary wrappers.
 - <strong>Multimodal:</strong> Chat using text and images (supports JPG, PNG, WebP, and multi-page PDFs).
 - <strong>Voice Chat:</strong> Have a conversation with your Ai.
 - <strong>Create Ai Tools:</strong> Create specialized assistants with unique personas, tailored for specific tasks (e.g. code generation, text summarization, creative writing).
