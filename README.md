@@ -1,1 +1,1 @@
-# MedAi-Console
+# Offline Multimodal MedAi Console
