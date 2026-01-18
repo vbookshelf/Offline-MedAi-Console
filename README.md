@@ -10,7 +10,7 @@ https://www.youtube.com/watch?v=LOndd7MpdCs
 
 <br>
 
-The MedAi Console is a transparent, offline-first and privacy-first multimodal Ai console where clinicians can talk, type, show images, adjust parameters and create Ai tools. Uses Flask for the backend, Whisper for Speech-to-Text (STT), Kokoro for Text-to-Speech (TTS), and Ollama to serve the Large Language Model (LLM). The app is powered by Google's Medgemma model.
+The MedAi Console is a transparent, offline-first and privacy-first multimodal Ai console where clinicians can talk, type, show images, adjust parameters and create Ai tools. Uses Flask for the backend, Whisper for Speech-to-Text (STT), Kokoro for Text-to-Speech (TTS), and Ollama to serve the Large Language Model (LLM). The app is powered by Google's MedGemma model.
 
 It’s a multi-disciplinary and multi-lingual virtual colleague that helps clinicians review documents, brainstorm ideas, generate hypotheses, challenge assumptions, and accelerate understanding. It gives clinicians a private and secure place to think clearly and quickly about difficult problems.
 
