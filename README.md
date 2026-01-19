@@ -23,7 +23,7 @@ https://www.youtube.com/watch?v=LOndd7MpdCs
 <br>
 
 
-<img src="images/image1x.png" alt="App screenshot" height="500">
+<img src="images/image2.png" alt="App screenshot" height="500">
 <p>Minimalist UI</p>
 
 <br>
@@ -62,17 +62,17 @@ The innovation is not in creating new technologies but in combining and optimizi
 
 <br>
 
-<img src="images/image2.png" alt="App screenshot" height="500">
+<img src="images/image3.png" alt="App screenshot" height="500">
 <p>Supports images and pdf files</p>
 
 <br>
 
-<img src="images/image3.png" alt="App screenshot" height="500">
+<img src="images/image4.png" alt="App screenshot" height="500">
 <p>Supports math notation and code rendering</p>
 
 <br>
 
-<img src="images/image4.png" alt="App screenshot" height="500">
+<img src="images/image5.png" alt="App screenshot" height="500">
 <p>Settings panel hidden</p>
 
 <br>
