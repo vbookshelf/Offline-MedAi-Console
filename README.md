@@ -39,9 +39,11 @@ https://www.youtube.com/watch?v=LOndd7MpdCs
 - <strong>Fully Transparent:</strong> All code files are accessible for review. No black-box executables or proprietary wrappers.
 - <strong>Multimodal:</strong> Chat using text and images (supports JPG, PNG, WebP, and multi-page PDFs).
 - <strong>Voice Chat:</strong> Have a conversation with your Ai.
+  
 - <strong>Create Ai Tools:</strong> Create specialized assistants with unique personas, tailored for specific tasks (e.g. code generation, text summarization, creative writing).
 - <strong>Advanced Model Controls:</strong> Tune the performance of models with adjustable parameters like temperature, context size, and top_p.
 - <strong>Webcam Photos:</strong> Use the webcam to send photos of hand drawn diagrams and homework problems directly to the chat.
+
 - <strong>Chat History:</strong> All conversations are saved in a portable file that can be moved to a secure location or deleted.
 - <strong>Supports math notation and code rendering:</strong> Ideal for use as an Ai tutor.
 - <strong>Single-file architecture:</strong> Code is easy to audit because HTML, CSS, JS and Python are all in one file. HIPAA compliance thinking is built into the design.
@@ -55,8 +57,11 @@ https://www.youtube.com/watch?v=LOndd7MpdCs
 The innovation is not in creating new technologies but in combining and optimizing existing technologies:
 
 - <strong>Self-Contained Single-File Architecture:</strong> The entire application logic is contained in a single file. This design offers two major benefits: it provides a low barrier for tinkering and Ai modification, and more importantly, it makes the codebase easy to audit for security and privacy.
+
 - <strong>"Double-Click to Run" Accessibility:</strong> Through simple .bat (Windows) and .command (macOS) scripts, the application can be launched without needing to use the command line, making it accessible to non-programmers and enthusiasts alike.
+
 - <strong>High-Performance Hybrid Network:</strong> The app intelligently uses both HTTP and WebSockets. HTTP provides robust handling for file uploads, while WebSockets enable a real-time, low-latency connection for streaming AI responses and audio.
+
 - <strong>Fast Audio with Sentence-by-Sentence TTS:</strong> Instead of waiting for the AI to generate its full response, text-to-speech audio begins playing sentence by sentence, creating a much more fluid and natural conversational experience.
 
 
@@ -254,8 +259,10 @@ voices-v1.0.bin: https://github.com/thewh1teagle/kokoro-onnx/releases/download/m
 
 - Because MedGemma-1.5 is a reasoning model, I've set up the app to disable voice output when the MedGemma-1.5 model is selected.
 - For best results when using your voice - use a headset or earphones with a mic. This reduces background noise. It also allows for a more relaxed chat because you won't have to constantly focus on being clearly heard by the speech to text system.
+
 - When setting up a tool (specialized assistant) that uses voice, it helps to tell it (in the system message) not to use markdown - or else the Ai will speak the markdown symbols out loud.
 - When creating agents/tools that will generate math notation, you need to tell the agent to use LaTeX when generating math notation. Please add this note to the system message: Use LaTeX notation for mathematical or scientific expressions.
+
 - Whisper is an LLM, and it can hallucinate. It sometimes generates random text like "Thank you for watching!". This text then gets converted in to speech.
 - At first glance the single-file architecture may look like a naive simplification created for non-technical users and for easy auditing - but it's much more. It's an architecture pattern that's optimized for AI-assisted development - a "see the entire picture at once" pattern that supports fast and efficient Human + Ai collaboration.
 
