@@ -1,5 +1,5 @@
 # Offline MedAi Console
-<strong>An offline Ai collborator for clinicians.</strong>
+<strong>An offline Ai collaborator for clinicians.</strong>
 > 
 > Prototype - For demonstration, education and inspiration
 
