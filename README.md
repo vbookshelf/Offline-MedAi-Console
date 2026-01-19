@@ -63,7 +63,12 @@ The innovation is not in creating new technologies but in combining and optimizi
 <br>
 
 <img src="images/image3.png" alt="App screenshot" height="500">
-<p>Supports images and pdf files</p>
+<p>Supports images</p>
+
+<br>
+
+<img src="images/image6.png" alt="App screenshot" height="500">
+<p>Supports pdf files</p>
 
 <br>
 
