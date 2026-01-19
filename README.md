@@ -1,5 +1,5 @@
 # Offline MedAi Console
-<strong>A truly offline text and voice medical Ai console powered by MedGemma</strong>
+<strong>An offline Ai collborator for Doctors. Powered by MedGemma.</strong>
 > 
 > Prototype - For demonstration, education and inspiration
 
