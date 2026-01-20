@@ -21,12 +21,6 @@ The model can also understand medical documents. Moreover, it has the general pu
 
 <br>
 
-YouTube Video:<br>
-myOfflineAi - A Local Text and Voice Chat Ai Console powered by Ollama, Whisper and Kokoro<br>
-https://www.youtube.com/watch?v=LOndd7MpdCs
-
-<br>
-
 
 <img src="images/image2.png" alt="App screenshot" height="500">
 <p>Minimalist UI</p>
