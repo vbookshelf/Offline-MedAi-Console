@@ -14,7 +14,7 @@ The console is powered by Google's MedGemma 4B model - a multi-skilled medical m
 - Radiology (X-rays, CT scans)
 -  Digital Pathology (Tissue slides)
 -   Dermatology (Skin conditions)
-- Ophthalmology (Retinal scans).
+- Ophthalmology (Retinal scans)
 
 The model can also understand medical documents. Moreover, it has the general purpose capabilities of the original Gemma3 model from which it was derived. For example, MedGemma is multilingual.
 
