@@ -8,7 +8,7 @@
 
 <br>
 
-The true power of Ai lies not in Ai replacing humans but in human/Ai collaboration. The MedAi Console is an offline platform that gives clinicians the privacy and flexibility to experiment with MedGemma and use it to create their own Ai tools. This could lead to some novel applications that programmers could never have imagined.
+The true power of Ai lies not in Ai replacing humans but in Human/Ai collaboration. The MedAi Console is an offline platform that gives clinicians the privacy and flexibility to experiment with MedGemma and use it to create their own Ai tools. This could lead to some novel applications that programmers could never have imagined.
 
 The MedAi Console is a transparent, offline-first and privacy-first multimodal Ai console where clinicians can talk, type, show images, adjust parameters and create Ai tools. Uses Flask for the backend, Whisper for Speech-to-Text (STT), Kokoro for Text-to-Speech (TTS), and Ollama to serve the Large Language Model (LLM). The key value proposition is this: Nothing ever leaves your device. 
 
