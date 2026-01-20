@@ -40,7 +40,7 @@ https://www.youtube.com/watch?v=LOndd7MpdCs
 
 <br>
 
-- <strong>100% Offline and Private:</strong> Your conversations and data never leave your local machine.
+- <strong>100% Offline and Private:</strong> Can run anywhere care is delivered. Your conversations and data never leave your local machine.
 - <strong>Fully Transparent:</strong> All code files are accessible for review. No black-box executables or proprietary wrappers.
 - <strong>Multimodal:</strong> Chat using text and images (supports JPG, PNG, WebP, and multi-page PDFs).
 - <strong>Voice Chat:</strong> Have a conversation with your Ai.
