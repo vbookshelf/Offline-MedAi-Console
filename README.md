@@ -8,11 +8,10 @@
 
 <br>
 
-The true power of Ai lies not in Ai replacing humans but in Human/Ai collaboration. The MedAi Console is an offline platform that gives clinicians the privacy and flexibility to experiment with MedGemma and use it to create their own Ai tools. This could lead to some novel applications that programmers could never have imagined.
+The MedAi Console is a transparent, offline-first and privacy-first multimodal Ai console where clinicians can talk, type, show images, adjust parameters and create Ai tools. Uses Flask for the backend, Whisper for Speech-to-Text (STT), Kokoro for Text-to-Speech (TTS), and Ollama to serve the Large Language Model (LLM).
 
-The MedAi Console is a transparent, offline-first and privacy-first multimodal Ai console where clinicians can talk, type, show images, adjust parameters and create Ai tools. Uses Flask for the backend, Whisper for Speech-to-Text (STT), Kokoro for Text-to-Speech (TTS), and Ollama to serve the Large Language Model (LLM). The key value proposition is this: Nothing ever leaves your device. 
+The console is powered by Google's MedGemma 4B model - a multi-skilled medical model. It’s trained to interpret medical images in four specialities: Radiology (X-rays, CT scans), Digital Pathology (Tissue slides), Dermatology (Skin conditions) and Ophthalmology (Retinal scans). The model can also understand medical documents. Moreover, it has the general purpose capabilities of the original Gemma3 model from which it was derived. For example, MedGemma is multilingual.
 
-The app, powered by Google's MedGemma 4B model, is a multi-disciplinary and multi-lingual virtual colleague that can help clinicians review documents, brainstorm ideas, generate hypotheses, challenge assumptions, and learn fast. It gives clinicians a private and secure place to think clearly and quickly about difficult problems.
 
 <br>
 
@@ -42,7 +41,7 @@ https://www.youtube.com/watch?v=LOndd7MpdCs
   
 - <strong>Create Ai Tools:</strong> Create specialized assistants with unique personas, tailored for specific tasks (e.g. code generation, text summarization, creative writing).
 - <strong>Advanced Model Controls:</strong> Tune the performance of models with adjustable parameters like temperature, context size, and top_p.
-- <strong>Webcam Photos:</strong> Use the webcam to send photos of hand drawn diagrams and homework problems directly to the chat.
+- <strong>Webcam Photos:</strong> Use the webcam to send photos of hand drawn diagrams and prescriptions directly to the chat.
 
 - <strong>Chat History:</strong> All conversations are saved in a portable file that can be moved to a secure location or deleted.
 - <strong>Supports math notation and code rendering:</strong> Ideal for use as an Ai tutor.
