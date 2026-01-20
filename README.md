@@ -57,7 +57,7 @@ The innovation is not in creating new technologies but in combining and optimizi
 
 - <strong>Self-Contained Single-File Architecture:</strong> The entire application logic is contained in a single file. This design offers two major benefits: it provides a low barrier for tinkering and Ai modification, and more importantly, it makes the codebase easy to audit for security and privacy.
 
-- <strong>"Double-Click to Run" Accessibility:</strong> Through simple .bat (Windows) and .command (macOS) scripts, the application can be launched without needing to use the command line, making it accessible to non-programmers and enthusiasts alike.
+- <strong>"Double-Click to Run" Accessibility:</strong> Through a simple .command MacOS script, the application can be launched without needing to use the command line, making it accessible to non-programmers.
 
 - <strong>High-Performance Hybrid Network:</strong> The app intelligently uses both HTTP and WebSockets. HTTP provides robust handling for file uploads, while WebSockets enable a real-time, low-latency connection for streaming AI responses and audio.
 
@@ -88,9 +88,9 @@ The innovation is not in creating new technologies but in combining and optimizi
 
 ## Why does this app only support MacOS?
 
-- Privacy is critical in medical applications. MacOS inspires trust because it's reliable and supports both privacy and user agency.
-- Base spec silicon Macs (256 GB storeage, 16 GB RAM, 1000 USD cost) are able to run the MedGemma model at a token speed that's fast enough to be useful.
+- Base spec silicon Macs (256 GB storeage, 16 GB RAM, built in GPU) are able to run the MedGemma model at a token speed that's fast enough to be useful.
 - Silicon Macs have battery life that's greater than 12 hours. This is important for a good user exerience, because running Ollama locally uses alot of battery power.
+- The relative low cost of a base spec Macbook Air (999 USD) makes local Ai accessible to ordinary people.
 
 <br>
 
