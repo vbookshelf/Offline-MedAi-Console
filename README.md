@@ -1,5 +1,5 @@
 # Offline MedAi Console
-<strong>An offline Ai collaborator for clinicians. Powered by MedGemma.</strong>
+<strong>An Ai collaborator for clinicians. Powered by MedGemma.</strong>
 > 
 > Prototype - For demonstration, education and inspiration
 
