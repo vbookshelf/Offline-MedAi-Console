@@ -10,7 +10,13 @@
 
 The MedAi Console is a transparent, offline-first and privacy-first multimodal Ai console where clinicians can talk, type, show images, adjust parameters and create Ai tools. Uses Flask for the backend, Whisper for Speech-to-Text (STT), Kokoro for Text-to-Speech (TTS), and Ollama to serve the Large Language Model (LLM).
 
-The console is powered by Google's MedGemma 4B model - a multi-skilled medical model. It’s trained to interpret medical images in four specialities: Radiology (X-rays, CT scans), Digital Pathology (Tissue slides), Dermatology (Skin conditions) and Ophthalmology (Retinal scans). The model can also understand medical documents. Moreover, it has the general purpose capabilities of the original Gemma3 model from which it was derived. For example, MedGemma is multilingual.
+The console is powered by Google's MedGemma 4B model - a multi-skilled medical model. It’s trained to interpret medical images in four specialities: 
+- Radiology (X-rays, CT scans)
+-  Digital Pathology (Tissue slides)
+-   Dermatology (Skin conditions)
+- Ophthalmology (Retinal scans).
+
+The model can also understand medical documents. Moreover, it has the general purpose capabilities of the original Gemma3 model from which it was derived. For example, MedGemma is multilingual.
 
 
 <br>
