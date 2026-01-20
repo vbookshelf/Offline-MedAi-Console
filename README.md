@@ -86,7 +86,7 @@ The innovation is not in creating new technologies but in combining and optimizi
 
 <br>
 
-## Why does this app only support MacOS?
+## Why does this console only support MacOS?
 
 - Base spec silicon Macs (256 GB storeage, 16 GB RAM, built in GPU) are able to run the MedGemma model at a token speed that's fast enough to be useful.
 - Silicon Macs have battery life that's greater than 12 hours. This is important for a good user exerience, because running Ollama locally uses alot of battery power.
