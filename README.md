@@ -87,8 +87,8 @@ The innovation is not in creating new technologies but in combining and optimizi
 
 <br>
 
-<img src="images/image5.png" alt="App screenshot" height="500">
-<p>Settings panel hidden</p>
+<img src="images/image7.png" alt="App screenshot" height="500">
+<p>Create AI tools</p>
 
 <br>
 
