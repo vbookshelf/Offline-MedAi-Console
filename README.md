@@ -90,7 +90,7 @@ The innovation is not in creating new technologies but in combining and optimizi
 
 - Base spec silicon Macs (256 GB storage, 16 GB RAM, built in GPU) are able to run the MedGemma model at a token speed that's fast enough to be useful.
 - Macs are reliable and privacy focused.
-- Silicon Macs have battery life that's greater than 12 hours. This is important for a good user exerience, because local inference uses alot of battery power.
+- Silicon Macs have battery life that's greater than 12 hours. This is important for a good user exerience, because local inference uses a lot of battery power.
 - The relative low cost of a base spec Silicon Mac (669 USD for Mac Mini, 999 USD for Macbook Air) makes local Ai accessible to ordinary people.
 
 <br>
