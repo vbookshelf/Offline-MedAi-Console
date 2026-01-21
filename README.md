@@ -1,5 +1,5 @@
 # Offline MedAi Console
-<strong>A multimodal Ai collaborator for clinicians. Powered by MedGemma.</strong>
+<strong>A multimodal AI collaborator for clinicians. Powered by MedGemma.</strong>
 > 
 > Prototype - For demonstration, education and inspiration
 
@@ -14,15 +14,17 @@ https://youtu.be/X3-6MpZp89s?si=y8ZHe_BfaoL8VA1E
 
 <br>
 
-The MedAi Console is a transparent, offline-first and privacy-first multimodal Ai console where clinicians can talk, type, show images, adjust parameters and create Ai tools. Uses Flask for the backend, Whisper for Speech-to-Text (STT), Kokoro for Text-to-Speech (TTS), and Ollama to serve the Large Language Model (LLM).
+The MedAi Console is a transparent, offline-first and privacy-first multimodal AI console where clinicians can talk, type, show images, adjust parameters and create AI tools. Uses Flask for the backend, Whisper for Speech-to-Text (STT), Kokoro for Text-to-Speech (TTS), and Ollama to serve the Large Language Model (LLM).
 
-The console is powered by Google's MedGemma 4B model. It’s trained to interpret medical images in four specialities: 
+The console is powered by Google's MedGemma 4B model.<br>
+It’s trained to interpret medical images in four specialities: 
+
 - Radiology (X-rays, CT scans)
--  Digital Pathology (Tissue slides)
--   Dermatology (Skin conditions)
+- Digital Pathology (Tissue slides)
+- Dermatology (Skin conditions)
 - Ophthalmology (Retinal scans)
 
-The model can also understand medical documents. Moreover, it has the general purpose capabilities of the original Gemma3 model from which it was derived. For example, MedGemma is multilingual.
+The model can also understand medical documents. Moreover, it has the general purpose capabilities of the Gemma3 model. For example, MedGemma is multilingual.
 
 
 <br>
@@ -43,14 +45,14 @@ The model can also understand medical documents. Moreover, it has the general pu
 - <strong>100% Offline and Private:</strong> Can run anywhere care is delivered. Your data never leaves your device.
 - <strong>Fully Transparent:</strong> All code files accessible for review. No black-box executables. No proprietary wrappers.
 - <strong>Multimodal:</strong> Chat using text and images (supports JPG, PNG, WebP, and multi-page PDFs).
-- <strong>Voice Chat:</strong> Talk to your Ai.
+- <strong>Voice Chat:</strong> Talk to your AI.
   
-- <strong>Create Ai Tools:</strong> Create specialized assistants tailored for specific tasks (e.g. x-ray analysis, text summarization, text extraction).
+- <strong>Create Ai Tools:</strong> Create specialized assistants for specific tasks (e.g. x-ray analysis, text summarization, text extraction).
 - <strong>Advanced Model Controls:</strong> Tune the performance of models with adjustable parameters like temperature, context size, and top_p.
 - <strong>Webcam Photos:</strong> Use the webcam to send photos of prescriptions and hand drawn diagrams directly to the chat.
 
 - <strong>Chat History:</strong> All conversations are saved in a portable file that can be moved to a secure location or deleted.
-- <strong>Supports math notation and code rendering:</strong> Ideal for use as an Ai tutor.
+- <strong>Supports math notation and code rendering:</strong> Ideal for use as an AI tutor.
 - <strong>Single-file architecture:</strong> Code is easy to audit because HTML, CSS, JS and Python are all in one file. HIPAA compliance thinking is built into the design.
 
 <br>
@@ -61,7 +63,7 @@ The model can also understand medical documents. Moreover, it has the general pu
 
 The innovation is not in creating new technologies but in combining and optimizing existing technologies:
 
-- <strong>Self-Contained Single-File Architecture:</strong> The entire application logic is contained in a single file. This design offers two major benefits: it provides a low barrier for tinkering and Ai modification, and more importantly, it makes the codebase easy to audit for security and privacy.
+- <strong>Self-Contained Single-File Architecture:</strong> The entire application logic is contained in a single file. This design has two benefits: it provides a low barrier for tinkering and AI modification and it makes the codebase easy to audit for security and privacy.
 
 - <strong>"Double-Click to Run" Accessibility:</strong> Through a simple .command MacOS script, the application can be launched without needing to use the command line, making it accessible to non-programmers.
 
@@ -94,10 +96,10 @@ The innovation is not in creating new technologies but in combining and optimizi
 
 ## Why does this console only support MacOS?
 
-- Base spec silicon Macs (256 GB storage, 16 GB RAM, built in GPU) are able to run the MedGemma model at a token speed that's fast enough to be useful.
+- Base-spec Macs (256GB Storage, 16GB RAM, built in GPU) are able to run the MedGemma model at a token speed that's fast enough to be useful.
 - Macs are reliable and privacy focused.
 - Silicon Macs have battery life that's greater than 12 hours. This is important for a good user exerience, because local inference uses a lot of battery power.
-- The relative low cost of a base spec Silicon Mac (669 USD for Mac Mini, 999 USD for Macbook Air) makes local Ai accessible to ordinary people.
+- The low cost of a base-spec Silicon Mac ($669 USD for a M4 Mac Mini, $999 USD for a M4 Macbook Air) makes local AI accessible to ordinary people.
 
 <br>
 
@@ -109,7 +111,7 @@ The innovation is not in creating new technologies but in combining and optimizi
 In this section you will do the following:
 - Install the Ollama desktop app
 - Download the MedGemma GGUF BF16 model from HuggingFace
-- Install the UV Python package manager
+- Install the uv Python package manager
 - Install ffmeg
 - Start the app by double clicking a file
 
@@ -123,7 +125,7 @@ System Requirements
 Operating System: MacOS
 Computer: Apple Silicon Mac (M1, M2, M3, M4)
 RAM: 16GB
-Free disk Space: 10 GB
+Free disk Space: 10GB
 
 --------------------------------------------------------------
 Step-by-Step Setup
@@ -273,11 +275,11 @@ voices-v1.0.bin: https://github.com/thewh1teagle/kokoro-onnx/releases/download/m
 - Because MedGemma-1.5 is a reasoning model, I've set up the app to disable voice output when the MedGemma-1.5 model is selected.
 - For best results when using your voice - use a headset or earphones with a mic. This reduces background noise. It also allows for a more relaxed chat because you won't have to constantly focus on being clearly heard by the speech to text system.
 
-- When setting up a tool (specialized assistant) that uses voice, it helps to tell it (in the system message) not to use markdown - or else the Ai will speak the markdown symbols out loud.
-- When creating agents/tools that will generate math notation, you need to tell the agent to use LaTeX when generating math notation. Please add this note to the system message: Use LaTeX notation for mathematical or scientific expressions.
+- When setting up an AI tool that uses voice, it helps to tell it (in the system message) not to use markdown - or else the AI will speak the markdown symbols out loud.
+- When creating tools that will generate math notation, you need to tell the model to use LaTeX when generating math notation. Please add this note to the system message: Use LaTeX notation for mathematical or scientific expressions.
 
 - Whisper is an LLM, and it can hallucinate. It sometimes generates random text like "Thank you for watching!". This text then gets converted in to speech.
-- At first glance the single-file architecture may look like a naive simplification created for non-technical users and for easy auditing - but it's much more. It's an architecture pattern that's optimized for AI-assisted development - a "see the entire picture at once" pattern that supports fast and efficient Human + Ai collaboration.
+- At first glance the single-file architecture may look like a naive simplification created for non-technical users and for easy auditing - but it's much more. It's an architecture pattern that's optimized for AI-assisted development - a "see the entire picture at once" pattern that supports fast and efficient Human-Ai collaboration.
 
 
 <br>
