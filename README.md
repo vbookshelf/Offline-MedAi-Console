@@ -41,7 +41,7 @@ The model can also understand medical documents. Moreover, it has the general pu
   
 - <strong>Create Ai Tools:</strong> Create specialized assistants with unique personas, tailored for specific tasks (e.g. x-ray analysis, text summarization, text extraction).
 - <strong>Advanced Model Controls:</strong> Tune the performance of models with adjustable parameters like temperature, context size, and top_p.
-- <strong>Webcam Photos:</strong> Use the webcam to send photos of hand drawn diagrams and prescriptions directly to the chat.
+- <strong>Webcam Photos:</strong> Use the webcam to send photos of prescriptions and hand drawn diagrams directly to the chat.
 
 - <strong>Chat History:</strong> All conversations are saved in a portable file that can be moved to a secure location or deleted.
 - <strong>Supports math notation and code rendering:</strong> Ideal for use as an Ai tutor.
