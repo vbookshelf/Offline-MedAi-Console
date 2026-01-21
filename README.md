@@ -102,7 +102,7 @@ The innovation is not in creating new technologies but in combining and optimizi
 
 In this section you will do the following:
 - Install the Ollama desktop app
-- Download an Ollama model
+- Download the MedGemma GGUF BF16 model from HuggingFace
 - Install the UV Python package manager
 - Install ffmeg
 - Start the app by double clicking a file
