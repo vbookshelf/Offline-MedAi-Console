@@ -3,6 +3,12 @@
 > 
 > Prototype - For demonstration, education and inspiration
 
+YouTube Video:<br>
+Introducing the Offline MedAi Console | Powered by MedGemma<br>
+https://youtu.be/X3-6MpZp89s?si=y8ZHe_BfaoL8VA1E
+
+<br>
+
 <img src="images/image1.png" alt="App screenshot" height="300">
 
 
