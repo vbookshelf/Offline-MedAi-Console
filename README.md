@@ -37,9 +37,9 @@ The model can also understand medical documents. Moreover, it has the general pu
 - <strong>100% Offline and Private:</strong> Can run anywhere care is delivered. Your data never leaves your device.
 - <strong>Fully Transparent:</strong> All code files accessible for review. No black-box executables. No proprietary wrappers.
 - <strong>Multimodal:</strong> Chat using text and images (supports JPG, PNG, WebP, and multi-page PDFs).
-- <strong>Voice Chat:</strong> Have a conversation with your Ai.
+- <strong>Voice Chat:</strong> Talk to your Ai.
   
-- <strong>Create Ai Tools:</strong> Create specialized assistants with unique personas, tailored for specific tasks (e.g. x-ray analysis, text summarization, text extraction).
+- <strong>Create Ai Tools:</strong> Create specialized assistants tailored for specific tasks (e.g. x-ray analysis, text summarization, text extraction).
 - <strong>Advanced Model Controls:</strong> Tune the performance of models with adjustable parameters like temperature, context size, and top_p.
 - <strong>Webcam Photos:</strong> Use the webcam to send photos of prescriptions and hand drawn diagrams directly to the chat.
 
