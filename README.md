@@ -114,7 +114,7 @@ In this section you will do the following:
 System Requirements
 --------------------------------------------------------------
 
-Operating System: macOS
+Operating System: MacOS
 Computer: Apple Silicon Mac (M1, M2, M3, M4)
 RAM: 16GB
 Free disk Space: 10 GB
