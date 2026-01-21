@@ -35,7 +35,7 @@ The model can also understand medical documents. Moreover, it has the general pu
 <br>
 
 - <strong>100% Offline and Private:</strong> Can run anywhere care is delivered. Your data never leaves your device.
-- <strong>Fully Transparent:</strong> All code files are accessible for review. No black-box executables. No proprietary wrappers.
+- <strong>Fully Transparent:</strong> All code files accessible for review. No black-box executables. No proprietary wrappers.
 - <strong>Multimodal:</strong> Chat using text and images (supports JPG, PNG, WebP, and multi-page PDFs).
 - <strong>Voice Chat:</strong> Have a conversation with your Ai.
   
