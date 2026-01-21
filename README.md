@@ -227,10 +227,15 @@ Troubleshooting
 
 1. It will take a few seconds to get a response to your first message because Ollama needs to load the model.
 Subsequent responses will be much faster.
+
 2. If the app doesn't start, make sure Ollama is running (look for its icon in your menu bar)
+
 3. If you see "connection refused", restart Ollama
+
 4. Inference time will increase as you increase the context size setting.
+
 5. Expect inference time to be longer when submitting large images or pdf files.
+
 6. For the voice (TTS) to work Kokoro needs two files: kokoro-v1.0.onnx, and voices-v1.0.bin.
 These files are auto downloaded during the setup process.
 However, if the voice is not working then please download these files manually and
