@@ -286,6 +286,7 @@ While this tool removes the need for Business Associate Agreements (BAAs) by kee
 
 - Whisper is an LLM, and it can hallucinate. It sometimes generates random text like "Thank you for watching!". This text then gets converted in to speech.
 
+<br>
 
 ## References
 
