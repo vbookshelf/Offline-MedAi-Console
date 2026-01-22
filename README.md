@@ -287,7 +287,7 @@ voices-v1.0.bin: https://github.com/thewh1teagle/kokoro-onnx/releases/download/m
 ## Revision History
 
 Version 1.0<br>
-1-Feb-2026<br>
+23-Jan-2026<br>
 Prototype. Released for demonstration.
 
 <br>
