@@ -53,7 +53,7 @@ The model can also understand medical documents. Moreover, it has the general pu
 
 - <strong>Chat History:</strong> All conversations are saved in a portable file that can be moved to a secure location or deleted.
 - <strong>Supports math notation and code rendering:</strong> Ideal for use as an AI tutor.
-- <strong>Single-file architecture:</strong> Code is easy to audit because HTML, CSS, JS and Python are all in one file. HIPAA compliance thinking is built into the design.
+- <strong>Single-file architecture:</strong> Code is easy to audit because HTML, CSS, JS and Python are all in one file.
 
 <br>
 
