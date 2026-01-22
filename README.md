@@ -63,7 +63,7 @@ The model can also understand medical documents. Moreover, it has the general pu
 
 The innovation is not in creating new technologies but in combining and optimizing existing technologies:
 
-- <strong>Self-Contained Single-File Architecture:</strong> The frontend and backend code is contained in a single app.py file. This design has two benefits: it provides a low barrier for tinkering and AI modification and it makes the codebase easy to audit for security and privacy.
+- <strong>Self-Contained Single-File Architecture:</strong> The frontend and backend code is contained in a single app.py file. This "see the entire picture at once" design makes the codebase easy to audit for security and privacy. It also makes the code highly maintainable through AI collaboration. Developers can share the entire codebase with an AI assistant in a single prompt. This enables them to add features or fix bugs immediately rather than logging GitHub issues and waiting for responses.
 
 - <strong>"Double-Click to Run" Accessibility:</strong> Through a simple .command MacOS script, the application can be launched without needing to use the command line, making it accessible to non-programmers.
 
