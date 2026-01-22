@@ -24,7 +24,7 @@ It can interpret medical images in four specialities:
 - Dermatology (Skin conditions)
 - Ophthalmology (Retinal scans)
 
-The model can also understand medical documents. Moreover, it has the general purpose capabilities of the Gemma3 model. For example, MedGemma is multilingual.
+The model can also understand medical documents. Moreover, it has the general purpose capabilities of the Gemma3 model.
 
 
 <br>
