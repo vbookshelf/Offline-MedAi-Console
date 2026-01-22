@@ -290,6 +290,10 @@ While this tool removes the need for Business Associate Agreements (BAAs) by kee
 
 ## References
 
+- Ollama: Running Hugging Face GGUF models just got easier!<br>
+  Learn Data with Mark<br>
+  https://www.youtube.com/watch?v=-iJMVIT4PYE
+
 - unsloth/medgemma-4b-it-GGUF model on HuggingFace<br>
 https://huggingface.co/unsloth/medgemma-4b-it-GGUF/tree/main
 
