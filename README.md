@@ -295,9 +295,11 @@ While this tool removes the need for Business Associate Agreements (BAAs) by kee
   https://www.youtube.com/watch?v=-iJMVIT4PYE
 
 - unsloth/medgemma-4b-it-GGUF model on HuggingFace<br>
+ollama run hf.co/unsloth/medgemma-4b-it-GGUF:BF16<br>
 https://huggingface.co/unsloth/medgemma-4b-it-GGUF/tree/main
 
 - unsloth/medgemma-1.5-4b-it-GGUF on HuggingFace<br>
+ollama run hf.co/unsloth/medgemma-1.5-4b-it-GGUF:BF16<br>
 https://huggingface.co/unsloth/medgemma-1.5-4b-it-GGUF/tree/main
 
 
