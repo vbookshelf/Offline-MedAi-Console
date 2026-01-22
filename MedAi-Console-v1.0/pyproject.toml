@@ -1,5 +1,5 @@
 [project]
-name = "MedAi Console"
+name = "MedAi-Console"
 version = "1.0"
 description = "An offline-first AI console."
 requires-python = "==3.12.*"
