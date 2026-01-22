@@ -269,7 +269,7 @@ voices-v1.0.bin: https://github.com/thewh1teagle/kokoro-onnx/releases/download/m
 
 <br>
 
-## Legal Note (US Only)
+## Legal Note (U.S. Only)
 
 While this tool removes the need for Business Associate Agreements (BAAs) by keeping data off the cloud, clinicians remain "Covered Entities" under HIPAA. Using an offline tool shifts the responsibility for data protection from a cloud provider to the local practice.
 
