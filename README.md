@@ -285,7 +285,7 @@ While this tool removes the need for Business Associate Agreements (BAAs) by kee
 - When creating tools that will generate math notation, you need to tell the model to use LaTeX when generating math notation. Please add this note to the system message: Use LaTeX notation for mathematical or scientific expressions.
 
 - Whisper is an LLM, and it can hallucinate. It sometimes generates random text like "Thank you for watching!". This text then gets converted in to speech.
-- At first glance the single-file architecture may look like an error in judgement that an inexperienced programmer might make. It's not an error. It's an architecture choice that's optimized for AI-assisted development - a "see the entire picture at once" pattern that supports fast and efficient Human-AI collaboration.
+
 
 
 <br>
