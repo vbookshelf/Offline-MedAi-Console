@@ -312,14 +312,23 @@ https://huggingface.co/unsloth/medgemma-4b-it-GGUF/tree/main
 ollama run hf.co/unsloth/medgemma-1.5-4b-it-GGUF:BF16<br>
 https://huggingface.co/unsloth/medgemma-1.5-4b-it-GGUF/tree/main
 
+- ollama<br>
+  https://github.com/ollama/ollama
+
 - ollama-python<br>
   https://github.com/ollama/ollama-python
+
+- flask<br>
+  https://github.com/pallets/flask
 
 - kokoro-onnx<br>
   https://github.com/thewh1teagle/kokoro-onnx
 
 - whisper<br>
   https://github.com/openai/whisper
+
+- PyMuPDF<br>
+  https://github.com/pymupdf/PyMuPDF
 
 
 <br>
