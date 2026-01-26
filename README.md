@@ -26,9 +26,19 @@ It can interpret medical images in four specialities:
 
 The model can also understand medical documents. Moreover, it has the general purpose capabilities of the Gemma3 model.
 
+<br>
+
+## Example Use Cases
+
+- I'm a registered nurse. I'm in a remote setting with a patient who has a fishing hook stuck in their finger. The hook is hard to pull out. What is the best way forward?
+
+- I'm a midwife. A pregnant woman in her third trimester has a headache and blurry vision. What questions can I ask that will help me differentiate between tension headache and pre-eclampsia?
+
+- I need to explain Atrial Fibrillation to a 75-year-old patient without using medical jargon. Please give me a one paragraph summary. The patient doesn't understand English. He only speaks Spanish.
 
 <br>
 
+## UI
 
 <img src="images/image2.png" alt="App screenshot" height="500">
 <p>Minimalist UI</p>
