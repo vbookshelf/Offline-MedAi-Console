@@ -30,11 +30,13 @@ The model can also understand medical documents. Moreover, it has the general pu
 
 ## Example Use Cases
 
+<i>"Helping ordinary people do extraordinary work."</i>
+
 - I'm a registered nurse. I'm in a remote setting with a patient who has a fishing hook stuck in their finger. The hook is hard to pull out. What is the best way forward?
 
 - I'm a midwife. A pregnant woman in her third trimester has a headache and blurry vision. What questions can I ask that will help me differentiate between tension headache and pre-eclampsia?
 
-- I need to explain Atrial Fibrillation to a 75-year-old patient without using medical jargon. Please give me a one paragraph summary. The patient doesn't understand English. He only speaks Spanish.
+- I'm a GP. I need to explain Atrial Fibrillation to a 75 year old patient without using medical jargon. Please give me a one paragraph summary. The patient doesn't understand English. He only speaks Spanish.
 
 <br>
 
