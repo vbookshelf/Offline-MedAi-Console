@@ -32,7 +32,7 @@ The model can also understand medical documents. Moreover, it has the general pu
 
 <i>Helping ordinary people do extraordinary work.</i>
 
-- I'm a registered nurse. I'm in a remote setting with a patient who has a fishing hook stuck in their finger. The hook is hard to pull out. What is the best way forward?
+- I'm a registered nurse. I'm in a remote setting with a patient who has a fishing hook stuck in their finger. The hook is hard to pull out. How do I remove it?
 
 - I'm a midwife. A pregnant woman in her third trimester has a headache and blurry vision. What questions can I ask that will help me differentiate between tension headache and pre-eclampsia?
 
