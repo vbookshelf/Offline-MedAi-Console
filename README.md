@@ -312,6 +312,15 @@ https://huggingface.co/unsloth/medgemma-4b-it-GGUF/tree/main
 ollama run hf.co/unsloth/medgemma-1.5-4b-it-GGUF:BF16<br>
 https://huggingface.co/unsloth/medgemma-1.5-4b-it-GGUF/tree/main
 
+- ollama-python<br>
+  https://github.com/ollama/ollama-python
+
+- kokoro-onnx<br>
+  https://github.com/thewh1teagle/kokoro-onnx
+
+- whisper<br>
+  https://github.com/openai/whisper
+
 
 <br>
 
