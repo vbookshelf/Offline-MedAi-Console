@@ -95,7 +95,7 @@ The innovation is not in creating new technologies but in combining and optimizi
 <br>
 
 <img src="images/image4.png" alt="App screenshot" height="500">
-<p>Supports math notation and code rendering</p>
+<p>Supports LaTeX notation and code rendering</p>
 
 <br>
 
