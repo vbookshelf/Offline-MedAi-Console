@@ -342,3 +342,7 @@ Prototype. Released for demonstration.
 <br>
 
 
+> <strong> There is no patent. Could you patent the sun?</strong><br>
+> <i>Dr. Jonas Salk</i>
+
+
