@@ -347,8 +347,4 @@ Prototype. Released for demonstration.
 <br>
 
 
-> <strong> There is no patent. Could you patent the sun?</strong><br>
-> <i>Jonas Salk<br>
-> (Creator of the first polio vaccine)</i>
-
 
