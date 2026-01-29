@@ -200,7 +200,8 @@ wget -qO- https://astral.sh/uv/install.sh | sh
 cd Desktop
 cd MedAi-Console-v1.0
 
-7. Paste this command into the terminal and press Enter
+7. Paste this command into the terminal and press Enter:
+(This rewrites a file to itself. It fixes the “permission denied” error.)
 cat start-mac-app.command > temp && mv temp start-mac-app.command && chmod +x start-mac-app.command
 
 8. Open the MedAi-Console-v1.0 folder
