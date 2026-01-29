@@ -54,7 +54,7 @@ The model can also understand medical documents. Moreover, it has the general pu
 
 - <strong>100% Offline and Private:</strong> Can run anywhere care is delivered. Your data never leaves your device.
 - <strong>Fully Transparent:</strong> All code files accessible for review. No black-box executables. No proprietary wrappers.
-- <strong>Multimodal:</strong> Chat using text and images (supports JPG, PNG, dicom, dcm and multi-page PDFs).
+- <strong>Multimodal:</strong> Chat using text and images (supports JPG, PNG, webp, dicom, dcm and multi-page PDFs).
 - <strong>Supports dicom files:</strong> Dicom files (.dicom and .dcm) are converted into png images and stored in the persistent_uploads folder.
 - <strong>Voice Chat:</strong> Talk to your AI.
   
