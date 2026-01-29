@@ -331,6 +331,9 @@ https://huggingface.co/unsloth/medgemma-1.5-4b-it-GGUF/tree/main
 - PyMuPDF<br>
   https://github.com/pymupdf/PyMuPDF
 
+- pydicom<br>
+  https://github.com/pydicom/pydicom
+
 
 <br>
 
