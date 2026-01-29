@@ -58,7 +58,7 @@ The model can also understand medical documents. Moreover, it has the general pu
 - <strong>Supports dicom files:</strong> Dicom files (.dicom and .dcm) are converted into png images and stored in the persistent_uploads folder.
 - <strong>Voice Chat:</strong> Talk to your AI.
   
-- <strong>Create Ai Tools:</strong> Create specialized assistants for specific tasks (e.g. x-ray analysis, text summarization, text extraction).
+- <strong>Create Ai Tools:</strong> This is similar to Gemini Gems and OpenAi GPTs. Create specialized assistants for specific tasks (e.g. x-ray analysis, text summarization, text extraction).
 - <strong>Advanced Model Controls:</strong> Tune the performance of models with adjustable parameters like temperature, context size, and top_p.
 - <strong>Webcam Photos:</strong> Use the webcam to send photos of prescriptions and hand drawn diagrams directly to the chat.
 
