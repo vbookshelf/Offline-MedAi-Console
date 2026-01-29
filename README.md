@@ -7,9 +7,6 @@ YouTube Video:<br>
 Introducing the Offline MedAi Console | Powered by MedGemma<br>
 https://youtu.be/X3-6MpZp89s?si=y8ZHe_BfaoL8VA1E
 
-Kaggle Writeup:<br>
-https://www.kaggle.com/competitions/med-gemma-impact-challenge/writeups/offline-medai-console
-
 <br>
 
 <img src="images/image1.png" alt="App screenshot" height="300">
