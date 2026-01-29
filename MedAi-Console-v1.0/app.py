@@ -3,7 +3,7 @@
 # Creator: vbookshelf
 # GitHub: https://github.com/vbookshelf/Offline-MedAi-Console
 # License: MIT
-# Version: 1.0
+# Version: 1.1 (DICOM Support)
 #----------------------
 
 from flask import Flask, render_template_string, request, jsonify, Response, session, send_from_directory
@@ -33,6 +33,11 @@ from urllib.parse import urlparse
 import whisper
 import soundfile as sf
 from kokoro_onnx import Kokoro
+
+# --- DICOM-Specific Imports ---
+import pydicom
+from pydicom.pixel_data_handlers.util import apply_voi_lut
+import numpy as np
 
 
 # --- Enable Flash Attention and Context Caching ---
@@ -109,6 +114,65 @@ MAX_PAGES = 15
 PDF_IMAGE_RES = 1.5
 MAX_UPLOAD_FILE_SIZE = 20
 
+
+# -----------------------------------------
+# DICOM Processing Functions
+# -----------------------------------------
+
+def read_xray(path, voi_lut=True, fix_monochrome=True):
+    """
+    Reads a DICOM file and returns a processed NumPy array for imaging.
+    Original from: https://www.kaggle.com/raddar/convert-dicom-to-np-array-the-correct-way
+    """
+    dicom = pydicom.dcmread(path)
+
+    if voi_lut:
+        data = apply_voi_lut(dicom.pixel_array, dicom)
+    else:
+        data = dicom.pixel_array
+
+    if fix_monochrome and dicom.PhotometricInterpretation == "MONOCHROME1":
+        data = np.amax(data) - data
+
+    data = data - np.min(data)
+    data = data / np.max(data)
+    data = (data * 255).astype(np.uint8)
+
+    return data
+
+
+def process_dicom_to_png_and_save(file_stream, output_path):
+    """
+    Reads a DICOM file from a stream, converts it to a PNG image,
+    and saves it to the specified output path.
+    """
+    try:
+        # pydicom.dcmread can read from a file-like object
+        dicom_data = pydicom.dcmread(file_stream)
+        
+        # Use the same logic as read_xray but with the in-memory object
+        if hasattr(dicom_data, 'pixel_array'):
+            data = apply_voi_lut(dicom_data.pixel_array, dicom_data)
+            
+            if dicom_data.PhotometricInterpretation == "MONOCHROME1":
+                data = np.amax(data) - data
+            
+            data = data - np.min(data)
+            data = data / np.max(data)
+            data = (data * 255).astype(np.uint8)
+            
+            # Convert numpy array to PIL Image and save
+            image = Image.fromarray(data)
+            image.save(output_path, 'PNG')
+            
+            print(f"[INFO] Converted DICOM to PNG and saved to {output_path}")
+            return True, None
+        else:
+            return False, "DICOM file does not contain pixel data."
+            
+    except Exception as e:
+        print(f"[ERROR] Failed to process DICOM file: {e}", file=sys.stderr)
+        return False, f"Invalid or corrupt DICOM file: {e}"
 
 
 # -----------------------------------------
@@ -1412,13 +1476,13 @@ HTML_TEMPLATE = r"""
 		            <form class="chat-form flex flex-col" data-agent-id="${agent.id}">
 		                <div id="image-preview-container-${agent.id}" class="mb-2 hidden flex flex-wrap gap-2"></div>
 		                <div class="flex space-x-3">
-		                    <input type="file" id="file-input-${agent.id}" class="hidden file-input" accept="image/*,.pdf" multiple>
+		                    <input type="file" id="file-input-${agent.id}" class="hidden file-input" accept="image/*,.pdf,.dcm,.dicom" multiple>
                             <div class="relative group">
                                 <button type="button" class="attach-file-btn flex-shrink-0 w-12 h-12 flex items-center justify-center bg-slate-200 text-slate-600 rounded-xl hover:bg-slate-300 transition-colors">
                                     <span style="font-size: 1.5rem;">+</span>
                                 </button>
                                 <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 bg-slate-800 text-white text-xs rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                                    jpg, png<br>webp, pdf
+                                    jpg, png, pdf<br>dcm, dicom
                                 </div>
                             </div>
 							
@@ -1564,6 +1628,17 @@ HTML_TEMPLATE = r"""
                     } else {
                         uploadItem.status = 'complete';
                         uploadItem.serverId = data.file_id;
+                        // --- MODIFICATION for DICOM ---
+                        // If the server converted the file (e.g., DICOM to PNG),
+                        // it returns a new file_id which is a .png. We need to update
+                        // the preview URL to point to this new file.
+                        const isDicom = uploadItem.filename.toLowerCase().endsWith('.dcm') || uploadItem.filename.toLowerCase().endsWith('.dicom');
+                        if (isDicom && data.file_id.toLowerCase().endsWith('.png')) {
+                            // Revoke the old blob URL as it's no longer needed
+                            URL.revokeObjectURL(uploadItem.preview);
+                            // The server ID is the filename in the persistent folder
+                            uploadItem.preview = `/uploads/${data.file_id}`;
+                        }
                     }
                     updatePreviews(agentId);
                 })
@@ -1588,7 +1663,11 @@ HTML_TEMPLATE = r"""
                 wrapper.className = 'relative';
                 
                 let content = '';
-                if (item.filename && item.filename.toLowerCase().endsWith('.pdf')) {
+                const lowerFilename = item.filename.toLowerCase();
+                const isPdf = lowerFilename.endsWith('.pdf');
+                const isDicom = lowerFilename.endsWith('.dcm') || lowerFilename.endsWith('.dicom');
+
+                if (isPdf) {
                     content = `
                         <div class="bg-slate-200 text-slate-800 rounded-lg flex items-center p-2 border border-slate-300 max-w-full">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-slate-600 flex-shrink-0 mr-2">
@@ -1596,7 +1675,14 @@ HTML_TEMPLATE = r"""
                             </svg>
                             <span class="text-sm font-medium whitespace-normal break-all pr-4" title="${item.filename}">${item.filename}</span>
                         </div>`;
-                } else {
+                } else if (isDicom && item.status !== 'complete') {
+                     // Show a placeholder for DICOM while it's uploading/processing
+                     content = `
+                        <div class="bg-slate-200 text-slate-800 rounded-lg flex items-center p-2 border border-slate-300 h-24 w-24 justify-center">
+                           <span class="text-sm font-bold">DCM</span>
+                        </div>`;
+                }
+                else {
                     content = `<img src="${item.preview}" class="h-24 w-24 rounded-lg object-cover border-2 border-slate-300">`;
                 }
 
@@ -1616,7 +1702,8 @@ HTML_TEMPLATE = r"""
                     const index = parseInt(btn.dataset.index, 10);
                     const itemToRemove = chat.uploadQueue[index];
                     
-                    if (itemToRemove && itemToRemove.preview) {
+                    // Only revoke if it's a blob URL, not a server path
+                    if (itemToRemove && itemToRemove.preview && itemToRemove.preview.startsWith('blob:')) {
                          URL.revokeObjectURL(itemToRemove.preview);
                     }
 
@@ -1725,22 +1812,36 @@ HTML_TEMPLATE = r"""
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-slate-600 flex-shrink-0 mr-2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm16.5-1.5H3.75" />
                     </svg>`;
+                
+                const dicomIcon = `
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-slate-600 flex-shrink-0 mr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>`;
 
                 imageFilenames.forEach((filename, index) => {
                     const fileWrapper = document.createElement('div');
-                    const isPdf = filename.toLowerCase().endsWith('.pdf');
+                    const lowerFilename = filename.toLowerCase();
+                    const isPdf = lowerFilename.endsWith('.pdf');
+                    const isDicom = lowerFilename.endsWith('.dcm') || lowerFilename.endsWith('.dicom');
 
                     if (isPdf) {
                         fileWrapper.className = 'max-w-xs bg-slate-200 text-indigo-700 rounded-lg flex items-center p-2 border border-slate-300 shadow-sm';
                         fileWrapper.innerHTML = `
                             ${pdfIcon}
                             <span class="text-sm font-medium whitespace-normal break-all" title="${filename}">${filename}</span>`;
-                    } else if (imagePreviews && imagePreviews[index]) {
+                    } else if (imagePreviews && imagePreviews[index] && !isDicom) {
+                        // Regular images
                         fileWrapper.innerHTML = `<img src="${imagePreviews[index]}" class="h-24 w-24 rounded-lg object-cover border-2 border-slate-200 shadow-sm">`;
-                    } else {
+                    } else if (imagePreviews && imagePreviews[index] && isDicom) {
+                        // DICOM files are now PNGs, so they have a preview URL.
+                        const previewUrl = imagePreviews[index].startsWith('blob:') ? imagePreviews[index] : `/uploads/${imageFilenames[index]}`;
+                        fileWrapper.innerHTML = `<img src="${previewUrl}" class="h-24 w-24 rounded-lg object-cover border-2 border-slate-200 shadow-sm">`;
+                    }
+                    else {
+                        // Fallback for files without previews
                         fileWrapper.className = 'max-w-xs bg-slate-200 text-indigo-700 rounded-lg flex items-center p-2 border border-slate-300 shadow-sm';
                         fileWrapper.innerHTML = `
-                            ${imageIcon}
+                            ${isDicom ? dicomIcon : imageIcon}
                             <span class="text-sm font-medium whitespace-normal break-all" title="${filename}">${filename}</span>`;
                     }
                     
@@ -1962,7 +2063,12 @@ HTML_TEMPLATE = r"""
 
             const imageIds = uploadQueue.map(item => item.serverId).filter(Boolean);
             const imagePreviews = uploadQueue.map(item => item.preview);
-            const imageFilenames = uploadQueue.map(item => item.serverId).filter(Boolean); // --- MODIFIED: Use serverId which is the unique filename
+            const imageFilenames = uploadQueue.map(item => {
+                const isDicom = item.filename.toLowerCase().endsWith('.dcm') || item.filename.toLowerCase().endsWith('.dicom');
+                // If it was a DICOM, the serverId is the new .png filename.
+                // Otherwise, use the original filename from the serverId.
+                return item.serverId;
+            }).filter(Boolean);
             
 		    if (chat.history.length === 0) document.getElementById(`chat-messages-${agentId}`).innerHTML = "";
 
@@ -2168,7 +2274,10 @@ HTML_TEMPLATE = r"""
             const historyToSave = JSON.parse(JSON.stringify(chat.history));
             historyToSave.forEach(msg => {
                 if (msg.role === 'user' && msg.parts?.[0]) {
-                    delete msg.parts[0].image_previews;
+                    // Don't save blob previews in the history JSON
+                    if (msg.parts[0].image_previews) {
+                        msg.parts[0].image_previews = msg.parts[0].image_previews.map(p => p.startsWith('blob:') ? '' : p);
+                    }
                 }
             });
 
@@ -3431,7 +3540,8 @@ def change_model():
 
 # --- File Upload Handling processes to Base64 in memory ---
 def allowed_file(filename):
-    allowed_chat_extensions = {'png', 'jpg', 'jpeg', 'gif', 'pdf', 'webp', 'heic', 'avif'}
+    # --- MODIFIED --- Added 'dcm' and 'dicom' to the allowed extensions
+    allowed_chat_extensions = {'png', 'jpg', 'jpeg', 'gif', 'pdf', 'webp', 'heic', 'avif', 'dcm', 'dicom'}
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in allowed_chat_extensions
 	
 
@@ -3488,9 +3598,14 @@ def process_image_to_base64(file_stream):
 @app.route('/avatars/<filename>')
 def serve_avatar(filename):
     return send_from_directory(AVATARS_FOLDER, filename)
+    
+@app.route('/uploads/<filename>')
+def serve_persistent_upload(filename):
+    """Serve files from the persistent uploads folder."""
+    return send_from_directory(PERSISTENT_UPLOADS_FOLDER, filename)
 		
 
-# --- MODIFIED --- This function now saves files to disk instead of processing into memory.
+# --- MODIFIED --- This function now saves files to disk and handles DICOM conversion.
 @app.route('/upload_file', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
@@ -3502,19 +3617,30 @@ def upload_file():
     if allowed_file(file.filename):
         original_filename = secure_filename(file.filename)
         extension = original_filename.rsplit('.', 1)[1].lower()
-        
-        # The unique ID will now be the filename on disk
         unique_id = str(uuid.uuid4())
-        new_filename = f"{unique_id}.{extension}"
         
-        # Save the file to the persistent folder
-        file_path = os.path.join(PERSISTENT_UPLOADS_FOLDER, new_filename)
-        file.save(file_path)
+        # --- DICOM Conversion Logic ---
+        if extension in ['dcm', 'dicom']:
+            new_filename = f"{unique_id}.png"
+            file_path = os.path.join(PERSISTENT_UPLOADS_FOLDER, new_filename)
+            
+            # process_dicom_to_png_and_save expects a file-like object
+            success, error_message = process_dicom_to_png_and_save(file.stream, file_path)
+            
+            if success:
+                print(f"[INFO] Saved converted DICOM as: {new_filename}")
+                return jsonify({'file_id': new_filename})
+            else:
+                return jsonify({'error': error_message}), 400
+        # --- End DICOM Logic ---
 
-        print(f"[INFO] Saved persistent file: {new_filename}")
-        
-        # We return the new unique filename as the file_id
-        return jsonify({'file_id': new_filename})
+        else:
+            new_filename = f"{unique_id}.{extension}"
+            file_path = os.path.join(PERSISTENT_UPLOADS_FOLDER, new_filename)
+            file.save(file_path)
+            print(f"[INFO] Saved persistent file: {new_filename}")
+            return jsonify({'file_id': new_filename})
+
     else:
         return jsonify({'error': f"File type '{file.filename.rsplit('.', 1)[1]}' not allowed."}), 400
 
@@ -3797,3 +3923,5 @@ if __name__ == "__main__":
         threading.Timer(1.0, open_browser).start()
 
     socketio.run(app, host="127.0.0.1", port=5000, debug=False, allow_unsafe_werkzeug=True)
+	
+	
