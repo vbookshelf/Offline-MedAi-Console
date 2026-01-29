@@ -110,7 +110,7 @@ The innovation is not in creating new technologies but in combining and optimizi
 - Base-spec Macs (256GB Storage, 16GB RAM, built in GPU) are able to run the BF16 MedGemma model at a token speed that's fast enough to be useful (approx. 13 tokens/sec).
 - Macs are reliable and privacy focused.
 - Silicon Macs have battery life that's greater than 12 hours. This is important for a good user exerience, because local inference uses a lot of battery power.
-- The low cost of a base-spec Silicon Mac ($669 USD for a M4 Mac Mini, $999 USD for a M4 Macbook Air) makes local AI accessible to ordinary people.
+- The low cost of a base-spec Silicon Mac ($599 USD for a M4 Mac Mini, $999 USD for a M4 Macbook Air) makes local AI accessible to ordinary people.
 
 <br>
 
