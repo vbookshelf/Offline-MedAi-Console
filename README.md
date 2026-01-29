@@ -340,6 +340,13 @@ https://huggingface.co/unsloth/medgemma-1.5-4b-it-GGUF/tree/main
 
 <br>
 
+## Discussion Forum
+
+Please feel free to share your thoughts and experiences. Click on the "Discussions" tab above to open the discussion forum for this repo.
+
+
+<br>
+
 ## Revision History
 
 Version 1.0<br>
