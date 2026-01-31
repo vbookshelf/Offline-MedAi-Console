@@ -107,6 +107,11 @@ The innovation is not in creating new technologies but in combining and optimizi
 
 <br>
 
+<img src="images/image8.png" alt="App screenshot" height="500">
+<p>Info printed in terminal after every response</p>
+
+<br>
+
 ## Why does this console only support MacOS?
 
 - Base-spec Macs (256GB Storage, 16GB RAM, built in GPU) are able to run the BF16 MedGemma model at a token speed that's fast enough to be useful (approx. 13 tokens/sec).
