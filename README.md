@@ -311,7 +311,8 @@ Note that Ollama automatically downloads new versions. There's no way to turn th
 
 <strong>Turn off telemetry on your Mac</strong>
 
-<i>System Settings > Privacy & Security > Analytics & Improvements</i>
+<i>System Settings > Privacy & Security > Analytics & Improvements</i><br>
+(This does not block all telemetry.)
 
 <img src="images/image9.png" alt="Ollama desktop app settings" height="500">
 
