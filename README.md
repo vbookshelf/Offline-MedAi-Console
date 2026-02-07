@@ -108,7 +108,7 @@ The innovation is not in creating new technologies but in combining and optimizi
 <br>
 
 <img src="images/image8.png" alt="App screenshot" height="400">
-<p>Info printed in terminal after every response</p>
+<p>Info printed in the terminal after every response</p>
 
 <br>
 
