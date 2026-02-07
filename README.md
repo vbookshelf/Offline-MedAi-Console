@@ -291,6 +291,27 @@ voices-v1.0.bin: https://github.com/thewh1teagle/kokoro-onnx/releases/download/m
 
 While this tool removes the need for Business Associate Agreements (BAAs) by keeping data off the cloud, clinicians remain "Covered Entities" under HIPAA. Using an offline tool shifts the responsibility for data protection from a cloud provider to the local practice.
 
+<br>
+
+## Privacy
+
+1. To maximize privacy, please ensure that Ollama is set to Airplane mode.
+
+<img src="https://github.com/vbookshelf/myOfflineAi-Flask-UI-for-Ollama/blob/main/images/image4.png" alt="Ollama desktop app settings" height="500">
+<p>Ollama Settings - Airplane mode</p>
+
+<br>
+
+2. Turn off telemetry on the mac.
+
+<img src="images/image9.png" alt="Ollama desktop app settings" height="500">
+<p>Toggle off telemetry</p>
+
+3. Disable automatic download and installation of MacOS updates.
+   This will ensure that you don't wake up one morning and discover that a new OS update has been installed that has has a negative impact on the operation of your Mac.
+<img src="images/image10.png" alt="Ollama desktop app settings" height="500">
+<p>Toggle off telemetry</p>
+
 
 <br>
 
