@@ -336,8 +336,6 @@ This will ensure that you don't wake up one morning and discover that a new OS h
 - When setting up an AI tool that uses voice, it helps to tell it (in the system message) not to use markdown - or else the AI will speak the markdown symbols out loud.
 - When creating tools that will generate math notation, you need to tell the model to use LaTeX when generating math notation. Please add this note to the system message: Use LaTeX notation for mathematical or scientific expressions.
 
-- Whisper is an LLM, and it can hallucinate. It sometimes generates random text like "Thank you for watching!". This text then gets converted in to speech.
-
 <br>
 
 ## References
@@ -382,6 +380,7 @@ https://huggingface.co/unsloth/medgemma-1.5-4b-it-GGUF/tree/main
 
 - The Mandarin Chinese voice is not reliable. It does not work sometimes.
 - The functionality to mute the audio (while the AI is speaking) can sometimes be unstable.
+- Whisper is an LLM, and it can hallucinate. It sometimes generates random text like "Thank you for watching!". This text then gets converted in to speech.
 
 <br>
 
