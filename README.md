@@ -346,6 +346,16 @@ This will ensure that you don't wake up one morning and discover that a new OS h
 
 <br>
 
+## Other Uses for the MedAi Console
+
+- <strong>Create an Offline Translator</strong>: Download the <strong>TranslateGemma</strong> model from Ollama (4B or 12B) and use it to create offline multimodal text and voice translation tools. Use it to translate documents and as an aid when communicating with patients whose language you don't speak.<br>
+  (Due to privacy regulations, clinicians (and legal professionals) can't always use online translation tools.)<br>
+  https://ollama.com/library/translategemma
+
+- <strong>Use as a Design Pattern</strong>: This project provides a reference implementation illustrating how multimodal AI models can be served in a fully offline environment, ensuring data privacy and total user control over their AI infrastructure.
+
+<br>
+
 ## References
 
 - Ollama: Running Hugging Face GGUF models just got easier!<br>
@@ -384,16 +394,6 @@ https://huggingface.co/unsloth/medgemma-1.5-4b-it-GGUF/tree/main
 
 <br>
 
-
-## Other Uses for the MedAi Console
-
-- <strong>Create an Offline Translator</strong>: Download the <strong>TranslateGemma</strong> model from Ollama (4B or 12B) and use it to create offline multimodal text and voice translation tools. Use it to translate documents and as an aid when communicating with patients whose language you don't speak.<br>
-  (Due to privacy regulations, clinicians (and legal professionals) can't always use online translation tools.)<br>
-  https://ollama.com/library/translategemma
-
-- <strong>Use as a Design Pattern</strong>: This project provides a reference implementation illustrating how multimodal AI models can be served in a fully offline environment, ensuring data privacy and total user control over their AI infrastructure.
-
-<br>
 
 ## Discussion Forum
 
