@@ -338,6 +338,14 @@ This will ensure that you don't wake up one morning and discover that a new OS h
 
 <br>
 
+## Known Issues
+
+- The Mandarin Chinese voice is not reliable. It does not work sometimes.
+- The functionality to mute the audio (while the AI is speaking) can sometimes be unstable.
+- Whisper is an LLM, and it can hallucinate. It sometimes generates random text like "Thank you for watching!". This text then gets converted in to speech.
+
+<br>
+
 ## References
 
 - Ollama: Running Hugging Face GGUF models just got easier!<br>
@@ -376,13 +384,6 @@ https://huggingface.co/unsloth/medgemma-1.5-4b-it-GGUF/tree/main
 
 <br>
 
-## Known Issues
-
-- The Mandarin Chinese voice is not reliable. It does not work sometimes.
-- The functionality to mute the audio (while the AI is speaking) can sometimes be unstable.
-- Whisper is an LLM, and it can hallucinate. It sometimes generates random text like "Thank you for watching!". This text then gets converted in to speech.
-
-<br>
 
 ## Other Uses for the MedAi Console
 
