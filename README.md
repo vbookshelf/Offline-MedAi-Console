@@ -378,6 +378,21 @@ https://huggingface.co/unsloth/medgemma-1.5-4b-it-GGUF/tree/main
 
 <br>
 
+## Known Issues
+
+- The Mandarin Chinese voice is not reliable. It does not work sometimes.
+- The functionality to mute the audio (while the AI is speaking) can sometimes be unstable.
+
+<br>
+
+## Other Uses for the MedAi Console
+
+- Download the TranslateGemma model and use it to create offline multimodal text and voice translation tools. Use it to translate documents and as an aid when communicating with patients whose language you don't speak.<br>
+  (Due to patient privacy requirements clinicians can't always use online translation tools.)<br>
+  https://ollama.com/library/translategemma
+
+<br>
+
 ## Discussion Forum
 
 Share your thoughts and experiences. Click on the "Discussions" tab above to open the discussion forum for this repo.
