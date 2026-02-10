@@ -342,7 +342,7 @@ This will ensure that you don't wake up one morning and discover that a new OS h
 
 - The Mandarin Chinese voice is not reliable. It does not work sometimes.
 - The functionality to mute the audio (while the AI is speaking) can sometimes be unstable.
-- Whisper is an LLM, and it can hallucinate. It sometimes generates random text like "Thank you for watching!". This text then gets converted in to speech.
+- Whisper is an LLM and it can hallucinate. It sometimes generates random text like "Thank you for watching!". This text then gets converted in to speech.
 
 <br>
 
