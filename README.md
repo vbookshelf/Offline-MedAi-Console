@@ -356,15 +356,6 @@ This will ensure that you don't wake up one morning and discover that a new OS h
 
 <br>
 
-## Next Steps
-
-- Explore FHIR (Fast Healthcare Interoperability Resources) integration.
-- Explore a local RAG system that would allow the AI to look up facts in a local library before answering. For example, this local library could contain WHO Clinical Guidelines.
-
-Assess if these features will add real value or just introduce complexity that will reduce security, reliability and speed.
-
-<br>
-
 ## References
 
 - Ollama: Running Hugging Face GGUF models just got easier!<br>
