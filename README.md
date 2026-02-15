@@ -411,5 +411,9 @@ Prototype. Released for demonstration.
 
 <br>
 
+## Disclaimer
+
+<i>This is an experimental research tool for demonstration purposes only and is not intended for clinical use or patient diagnosis. All AI-generated outputs are probabilistic and must be independently verified by a qualified medical professional. By using this software, you acknowledge that it is provided "as is" and the authors assume no liability for medical decisions made based on its content.</i>
+
 
 
