@@ -302,7 +302,7 @@ While this tool removes the need for Business Associate Agreements (BAAs) by kee
 
 FileVault is a built-in macOS security feature that provides full-disk encryption. This ensures that if a Mac is lost or stolen the files n it cannot be accessed. 
 
-<i>System Settings > Privacy & Security > FileVault</i>
+<i>System Settings > Privacy & Security > Scroll down to FileVault</i>
 
 <img src="images/image10.png" alt="FileVault" height="400">
 
@@ -333,9 +333,9 @@ Note that Ollama automatically downloads new versions. There's no way to turn th
 
 This will ensure that you don't wake up one morning and discover that a new OS has been installed and it has negatively impacted on the operation of your Mac.
 
-<i>System Settings > General > Scroll down to Automatic Updates > Click on "i"</i>
+<i>System Settings > General > Software Update > Scroll down to Automatic Updates > Click on "i"</i>
    
-<img src="images/image10.png" alt="Ollama desktop app settings" height="500">
+<img src="images/image11.png" alt="Ollama desktop app settings" height="500">
 
 <br>
 
