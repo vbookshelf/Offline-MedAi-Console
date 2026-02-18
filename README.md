@@ -300,7 +300,7 @@ While this tool removes the need for Business Associate Agreements (BAAs) by kee
 
 <strong>Turn on FileVault Disk Encryption</strong>
 
-FileVault is a built-in macOS security feature that provides full-disk encryption. This ensures that if a Mac is lost or stolen the files n it cannot be accessed. 
+FileVault is a built-in macOS security feature that provides full-disk encryption. This ensures that if a Mac is lost or stolen the files cannot be accessed. 
 
 <i>System Settings > Privacy & Security > Scroll down to FileVault</i>
 
