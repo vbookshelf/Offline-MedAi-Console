@@ -298,6 +298,16 @@ While this tool removes the need for Business Associate Agreements (BAAs) by kee
 
 <br>
 
+<strong>Turn on FileVault Disk Encryption</strong>
+
+FileVault is a built-in macOS security feature that provides full-disk encryption. This ensures that if a Mac is lost or stolen the files n it cannot be accessed. 
+
+<i>Ollama > Settings</i>
+
+<img src="images/image10.png" alt="FileVault" height="400">
+
+<br>
+
 <strong>Set Ollama to Airplane Mode</strong>
 
 To maximize privacy, please ensure that Ollama is set to Airplane mode.
