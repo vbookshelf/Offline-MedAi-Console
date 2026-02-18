@@ -304,7 +304,7 @@ FileVault is a built-in macOS security feature that provides full-disk encryptio
 
 <i>System Settings > Privacy & Security > Scroll down to FileVault</i>
 
-<img src="images/image10.png" alt="FileVault" height="400">
+<img src="images/image10.png" alt="FileVault" height="500">
 
 <br>
 
