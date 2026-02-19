@@ -368,6 +368,9 @@ This will ensure that you don't wake up one morning and discover that a new OS h
 
 ## References
 
+- One file to rule them all<br>
+https://github.com/vbookshelf/Single-File-Flask-Web-App
+
 - Ollama: Running Hugging Face GGUF models just got easier!<br>
   Learn Data with Mark<br>
   https://www.youtube.com/watch?v=-iJMVIT4PYE
