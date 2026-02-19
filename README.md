@@ -31,8 +31,6 @@ The model can also understand medical documents. Moreover, it has the general pu
 
 ## Example Use Cases
 
-- An X-ray shows a 'sail sign' in a pediatric patient. Please explain the clinical significance of this finding and what the next diagnostic step should be.
-
 - I'm a midwife. A pregnant woman in her third trimester has a headache and blurry vision. What questions can I ask that will help me differentiate between tension headache and pre-eclampsia?
 
 - I'm a GP. I need to explain Atrial Fibrillation to a 75 year old patient without using medical jargon. Please give me a one paragraph summary. The patient doesn't understand English. He only speaks Spanish.
