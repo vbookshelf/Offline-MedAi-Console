@@ -336,7 +336,7 @@ Note that Ollama automatically downloads new versions. There's no way to turn th
 
 <strong>Disable automatic download and installation of MacOS updates</strong>
 
-This will ensure that you don't wake up one morning and discover that a new OS has been installed and it has negatively impacted on the operation of your Mac.
+This will ensure that you don't wake up one morning and discover that a new OS has been installed and it has negatively impacted the operation of your Mac.
 
 <i>System Settings > General > Software Update > Scroll down to Automatic Updates > Click on "i"</i>
    
@@ -368,7 +368,7 @@ This will ensure that you don't wake up one morning and discover that a new OS h
   (Due to privacy regulations, clinicians (and legal professionals) can't always use online translation tools.)<br>
   https://ollama.com/library/translategemma
 
-- <strong>Use as a Design Pattern</strong>: This project provides a reference implementation illustrating how multimodal AI models can be served in a fully offline environment, ensuring data privacy and total user control over their AI infrastructure.
+- <strong>Use as a Design Pattern</strong>: This project provides a reference implementation illustrating how multimodal AI models can be served in a fully offline environment, ensuring data privacy and total user control.
 
 <br>
 
