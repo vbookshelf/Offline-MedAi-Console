@@ -82,4 +82,4 @@ uv sync || { echo "[ERROR] uv failed to sync dependencies"; exit 1; }
 
 # --- Launch app ---
 echo "[INFO] Launching app..."
-python app.py
+uv run python app.py
