@@ -113,7 +113,7 @@ The innovation is not in creating new technologies but in combining and optimizi
 
 In an era of diminishing digital trust, this app has a transparent design. When you start the app, a terminal window opens along with the interface. Traditional apps hide their inner workings. But, for a privacy-focused tool, visibility is security.
 
-The terminal serves as a real-time audit log. It provides technical proof of privacy. A visible terminal transforms the user from a passive consumer into an auditor. This reduces privacy anxiety." 
+The terminal serves as a real-time audit log. It provides technical proof of privacy. A visible terminal transforms the user from a passive consumer into an auditor. This reduces privacy anxiety.
 
 <br>
 
