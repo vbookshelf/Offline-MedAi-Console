@@ -111,7 +111,7 @@ The innovation is not in creating new technologies but in combining and optimizi
 
 ## Why show the Terminal?
 
-In an era of diminishing digital trust, this app adopts a Transparency-First design. When you start the app, a terminal window opens along with the interface. Traditional apps hide their inner workings. But, for a privacy-focused tool, visibility is security.
+In an era of diminishing digital trust, this app has a transparent design. When you start the app, a terminal window opens along with the interface. Traditional apps hide their inner workings. But, for a privacy-focused tool, visibility is security.
 
 The terminal serves as a real-time audit log. It provides technical proof of privacy. A visible terminal transforms the user from a passive consumer into an auditor. It reduces "privacy anxiety" by replacing "trust us" with "see for yourself." 
 
