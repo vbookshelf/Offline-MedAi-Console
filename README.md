@@ -243,7 +243,6 @@ Future startup
 
 Now that the setup is complete, in future simply double-click the start-mac-app.command file
 to launch the app.
-The project folder must be placed on your desktop before the app is launched.
 
 You could start the app and leave it running in the background all day.
 Then whenever you want to use it, enter the following url in your browser:
