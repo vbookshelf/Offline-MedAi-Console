@@ -368,7 +368,7 @@ This will ensure that you don't wake up one morning and discover that a new OS h
   (Due to privacy regulations, clinicians (and legal professionals) can't always use online translation tools.)<br>
   https://ollama.com/library/translategemma
 
-- <strong>Use as a Design Pattern</strong>: This project is a recipe for serving multimodal AI models in a fully offline environment. It's a working reference implementation that others can use to build AI powered tools at the edge.
+- <strong>Use as a Design Pattern</strong>: This project is a recipe for serving multimodal AI models in a fully offline environment. It's a working reference implementation that others can use to build privacy-first AI powered tools at the edge.
 
 <br>
 
