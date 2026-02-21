@@ -55,7 +55,7 @@ The model can also understand medical documents. Moreover, it has the general pu
 - <strong>Fully Transparent:</strong> All code files accessible for review. No black-box executables. No proprietary wrappers.
 - <strong>Multimodal:</strong> Chat using text and images (supports jpg, png, webp, dicom, dcm and multi-page PDFs). Each pdf page is passed to the model as an image. This enables the model to see all visual details including graphs, embedded images and tables.
 - <strong>Supports DICOM files:</strong> DICOM files (.dicom and .dcm) are converted into png images and stored in the persistent_uploads folder.
-- <strong>Voice Chat:</strong> Talk to your AI. (This is an agentic system. It's easy to forget that Whisper and Kokoro are LLMs in disguise.)
+- <strong>Voice Chat:</strong> Talk to your AI. (This is an agentic system. It's easy to forget that Whisper and Kokoro are specialized LLMs.)
   
 - <strong>Create Ai Tools:</strong> This is similar to Gemini Gems and OpenAI GPTs. Create specialized assistants for specific tasks (e.g. x-ray analysis, text summarization, text extraction).
 - <strong>Advanced Model Controls:</strong> Tune the performance of models with adjustable parameters like temperature, context size, and top_p.
