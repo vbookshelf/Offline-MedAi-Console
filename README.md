@@ -124,7 +124,7 @@ This console only supports Apple Silicon because it allows for high-performance 
 - Base-spec Macs (256GB Storage, 16GB RAM, built in GPU) are able to run the BF16 MedGemma model at a token speed that's fast enough to be useful (approx. 13 tokens/sec).
 - Silicon Macs have battery life that's greater than 12 hours. This is important for a good user exerience, because local inference uses a lot of battery power.
 - The low cost of a base-spec Silicon Mac ($599 USD for a M4 Mac Mini, $999 USD for a M4 Macbook Air) makes local AI accessible to ordinary people.
-- Mac has built in disk encrpytion (FileVault). This can be turned on without connecting to a cloud account. Disk encryption ensures that no patient data can be accessed if the device is lost or stolen. By using a Mac, clinicians have Security by Default.
+- Mac has built in disk encrpytion (FileVault). This can be turned on without connecting to a cloud account. Disk encryption ensures that no patient data can be accessed if the device is lost or stolen.
 
 
 
