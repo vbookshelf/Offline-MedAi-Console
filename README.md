@@ -124,6 +124,8 @@ The terminal serves as a real-time audit log. It provides technical proof of pri
 - The low cost of a base-spec Silicon Mac ($599 USD for a M4 Mac Mini, $999 USD for a M4 Macbook Air) makes local AI accessible to ordinary people.
 - Mac has built in disk encrpytion (FileVault). This can be turned on without connecting to a cloud account. Disk encryption ensures that no patient data can be accessed if the device is lost or stolen. By using a Mac, clinicians have Security by Default.
 
+This console uses Apple Silicon because it allows for high-performance AI, total offline privacy and easy to enable military-grade disk encryption.
+
 <br>
 
 
