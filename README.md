@@ -66,7 +66,7 @@ The model can also understand medical documents. Moreover, it has the general pu
 
 - <strong>Chat History:</strong> All conversations are saved in a portable file, located in the project folder. It can be moved to a secure location or deleted.
 - <strong>Supports LaTeX notation and code rendering:</strong> Can be used as a medical AI tutor for chemistry and math.
-- <strong>Single-file architecture:</strong> Code is easy to audit because HTML, CSS, JS and Python are all in one file. This just screams "Audit me."
+- <strong>Single-file architecture:</strong> Code is easy to audit because HTML, CSS, JS and Python are all in one file.
 
 <br>
 
