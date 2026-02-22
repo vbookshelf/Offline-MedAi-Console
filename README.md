@@ -365,7 +365,7 @@ This will ensure that you don't wake up one morning and discover that a new OS h
 - The Mandarin Chinese voice is not reliable. It does not work sometimes.
 - The functionality to mute the audio (while the AI is speaking) can sometimes be unstable.
 - Whisper is an LLM and it can hallucinate. It sometimes generates random text like "Thank you for watching!". This text then gets converted in to speech.
-- Ollama automatically downloads application updates. There's no supported way to disable this. Ollama's built-in "Airplane Mode" setting does not prevent this — it only disables Turbo mode and web search features. For users with limited mobile data or metered connections, these background updates can consume data unexpectedly and without warning.
+- Ollama automatically downloads application updates. There's no supported way to disable this behaviour. The built-in Airplane Mode setting does not stop these updates — it only disables Turbo mode and web search features. Users on limited mobile data plans or metered connections should be aware that these background updates will consume data without notice, resulting in unexpected internet charges.
 
 <br>
 
