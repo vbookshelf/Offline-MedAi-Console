@@ -322,8 +322,7 @@ FileVault is a built-in macOS security feature that provides full-disk encryptio
 
 <strong>Set Ollama to Airplane Mode</strong>
 
-To maximize privacy, please ensure that Ollama is set to Airplane mode.
-Note that Ollama automatically downloads new versions. There's no way to turn this off.
+To maximize privacy, please ensure that Ollama is set to Airplane mode. But, take note that this only disables Turbo mode and web search features. It does not block all network access. Also, Ollama automatically downloads new versions. There's no way to turn this off.
 
 <i>Ollama > Settings</i>
 
@@ -366,6 +365,7 @@ This will ensure that you don't wake up one morning and discover that a new OS h
 - The Mandarin Chinese voice is not reliable. It does not work sometimes.
 - The functionality to mute the audio (while the AI is speaking) can sometimes be unstable.
 - Whisper is an LLM and it can hallucinate. It sometimes generates random text like "Thank you for watching!". This text then gets converted in to speech.
+- Ollama automatically downloads application updates and there is no supported way to disable this. Ollama's built-in "Airplane Mode" setting does not prevent this — it only disables Turbo mode and web search features. For users with limited mobile data or metered connections, these background updates can consume data unexpectedly and without warning.
 
 <br>
 
