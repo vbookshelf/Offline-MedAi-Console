@@ -381,7 +381,7 @@ The solution is the same for all: keep the data local, lock dependencies, make t
 
 A single-file architecture allows any auditor to review the entire codebase in one sitting. Localhost enforcement ensures data never leaves the device.
 
-The hard problem was never the AI. It was trust.
+The hard problem is not the AI. It's trust.
 
 <br>
 
