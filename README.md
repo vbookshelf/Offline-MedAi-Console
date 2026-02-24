@@ -1,6 +1,7 @@
 # Offline MedAi Console
 <strong>A multimodal Ai collaborator for clinicians. Powered by MedGemma.</strong>
 
+<br>
 
 <a href="https://youtu.be/X3-6MpZp89s?si=y8ZHe_BfaoL8VA1E">
   <img src="images/image12.png" height="300" alt="Watch Video">
