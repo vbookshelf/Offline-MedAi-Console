@@ -26,7 +26,7 @@ https://www.kaggle.com/competitions/med-gemma-impact-challenge/writeups/offline-
 
 The MedAi Console is a transparent, offline-first and privacy-first multimodal AI console where clinicians can talk, type, show images, adjust parameters and create AI tools. Uses Flask for the backend, Whisper for Speech-to-Text (STT), Kokoro for Text-to-Speech (TTS), and Ollama to serve the Large Language Model (LLM). It's designed to run on Apple Silicon computers.
 
-The console is powered by Google's MedGemma 4B model. MedGemma is a multi-skilled medical model.<br>
+The console is powered by Google's MedGemma 4B model in BF16 GGUF format. MedGemma is a multi-skilled medical model.<br>
 It can interpret medical images in four specialities: 
 
 - Radiology (X-rays, CT scans)
