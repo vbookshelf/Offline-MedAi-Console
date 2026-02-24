@@ -297,7 +297,7 @@ voices-v1.0.bin: https://github.com/thewh1teagle/kokoro-onnx/releases/download/m
 <br>
 
 ## Technologies Used
-
+<strong>Model:</strong> hf.co/unsloth/medgemma-4b-it-GGUF:BF16<br>
 <strong>Backend:</strong> Flask (HTTP), Flask-SocketIO (WebSockets), Ollama Python<br>
 <strong>Frontend:</strong> HTML, Tailwind CSS, JavaScript<br>
 <strong>File Processing:</strong> PyMuPDF (for PDFs)<br>
