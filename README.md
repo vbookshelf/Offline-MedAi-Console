@@ -7,7 +7,12 @@
 </a>
 <br>
 Demo Video<br>
-https://www.youtube.com/watch?v=X3-6MpZp89s
+
+https://www.youtube.com/watch?v=X3-6MpZp89s<br>
+
+Kaggle Writeup<br>
+The MedGemma Impact Challenge<br>
+https://www.kaggle.com/competitions/med-gemma-impact-challenge/writeups/offline-medai-console
 
 
 <br>
