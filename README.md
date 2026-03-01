@@ -396,7 +396,7 @@ This solves the 'uncontrolled downloads" issue, and it means that the user will 
 - Runs completely offline.
 - Can be run on an external SSD.
 - Runs in a virtual environment so other software on the user's computer is not disturbed.
-- User data is encrypted.
+- User data is encrypted. Protects against accidental data leaks.
 
 I converted the MedAi Console into a Thumb-Drive App (TDA).<br>
 It can be downloaded from Kaggle:<br>
