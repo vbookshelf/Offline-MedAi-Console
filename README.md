@@ -356,6 +356,23 @@ This will ensure that you don't wake up one morning and discover that a new OS h
 
 <br>
 
+## One Command. Complete Control.
+
+You would have noticed that, to make this app executable, this command needed to be typed in the terminal:
+
+```
+cat start-mac-app.command > temp && mv temp start-mac-app.command && chmod +x start-mac-app.command
+```
+
+To remove this requirement I would need to code sign the start-mac-app.command file. Most macOS apps distributed outside the App Store are code signed using an Apple Developer ID certificate. Code signing requires an active Apple Developer Program membership.
+
+I don't use code signing because it introduces a point of failure. If the Apple membership lapses, or if Apple revokes the certificate for any reason, signed apps will stop launching cleanly for new users. For software intended for use in medical or other high-stakes settings, this risk is unacceptable.
+
+In exchange for the minor inconvenience of typing this command into the terminal, you get a reliable app that has no dependency on any third party. You have complete control.
+
+
+<br>
+
 ## Notes
 
 - Because MedGemma-1.5 is a reasoning model, I've set up the app to disable voice output when the MedGemma-1.5 model is selected.
