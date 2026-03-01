@@ -458,6 +458,12 @@ https://huggingface.co/unsloth/medgemma-1.5-4b-it-GGUF/tree/main
 - pydicom<br>
   https://github.com/pydicom/pydicom
 
+- Thumb-Drive App (TDA) Demo<br>
+https://www.kaggle.com/datasets/vbookshelf/v2-0-offline-medai-console-thumb-drive-app/
+
+- Thumb-Drive-App-Concept<br>
+https://github.com/vbookshelf/Thumb-Drive-App-Concept
+
 
 <br>
 
