@@ -386,7 +386,7 @@ This solves the 'uncontrolled downloads" issue, and it means that the user will 
 <br>
 
 ## Thumb-Drive App (TDA)
-### AI on a stick - for places where there's no internet.
+### AI on a stick - for people who don't have internet access.
 
 - A method to deploy portable self-contained AI apps in places where there's no internet.
 - Bundles the AI model and all binary executables together with the app - including Ollama.
