@@ -398,7 +398,7 @@ This solves the 'uncontrolled downloads" issue, and it means that the user will 
 - Runs in a virtual environment so other software on the user's computer is not disturbed.
 - User data is encrypted. Protects against accidental data leaks.
 
-I converted the MedAi Console into a Thumb-Drive App (TDA).<br>
+The MedAi Console v2.0 has been converted into a Thumb-Drive App (TDA).<br>
 It can be downloaded from Kaggle:<br>
 https://www.kaggle.com/datasets/vbookshelf/v2-0-offline-medai-console-thumb-drive-app/
 
