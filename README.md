@@ -380,7 +380,7 @@ This will ensure that you don't wake up one morning and discover that a new OS h
 
 I initially thought that the solution was to remove Ollama and use MLX as the inference engine. However, after testing I discovered that MLX is powerful, but it's not memory efficient - there are constant OOM errors when handling images. This made me realize that Ollama is the true magic that makes this app work. The solution is not to remove Ollama but to bundle its CLI binary with this app. 
 
-This solves the 'uncontrolled downloads" issue, and it means that the user will not need to install Ollama separately. The binaries for ffmpeg and UV can also be bundled with the app. This creates a true "double-click to install" experience. It also means that once installed, the app can be shared with others using a thumb drive or via AirDrop. I call this fully packaged app concept a Thumb Drive App (TDA). A TDA can be useful in low resource settings where there's no internet or where internet data is expensive.
+This solves the 'uncontrolled downloads" issue, and it means that the user will not need to install Ollama separately. The binaries for ffmpeg and UV can also be bundled with the app. This creates a true "double-click to install" experience. It also means that once installed, the app can be shared with others using a thumb-drive or via AirDrop. I call this fully packaged app concept a Thumb Drive App (TDA). A TDA can be useful in low resource settings where there's no internet or where internet data is expensive.
 
 
 <br>
