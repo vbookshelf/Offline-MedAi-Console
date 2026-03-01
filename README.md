@@ -386,7 +386,9 @@ In exchange for the minor inconvenience of typing this command into the terminal
 ## Known Issues
 
 - The Mandarin Chinese voice is not reliable. It does not work sometimes.
+  
 - The functionality to mute the audio (while the AI is speaking) can sometimes be unstable.
+  
 - Whisper is an LLM and it can hallucinate. During long periods of silence it can generate random text like "Thank you for watching!". This text then gets converted in to speech.
 - Ollama automatically downloads application updates. There's no supported way to disable this behaviour. The built-in Airplane Mode setting does not stop these updates — it only disables Turbo mode and web search features. Users on limited mobile data plans or metered connections should be aware that these background updates will consume data without notice, resulting in unexpected internet charges.
 - The 4b MedGemma model can struggle in multi turn image scenarios. Initially, I thought that there was a bug in the way images are stored in the message history and that MedGemma could not see images submitted in past conversation turns. As a result, when asked questions about previously submitted images, the model was hallucinating. However, after testing the code using Gemma 12b, I discovered that the issue was with the MedGemma 4b model and not with the code.
