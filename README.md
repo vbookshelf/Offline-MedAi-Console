@@ -382,8 +382,25 @@ I initially thought that the solution was to remove Ollama and use MLX as the in
 
 This solves the 'uncontrolled downloads" issue, and it means that the user will not need to install Ollama separately. The binaries for ffmpeg and UV can also be bundled with the app. This creates a true "double-click to install" experience. It also means that once installed, the app can be shared with others using a thumb drive or via AirDrop. I call this fully packaged app concept a Thumb Drive App (TDA). A TDA can be useful in low resource settings where there's no internet or where internet data is expensive.
 
-The TDA concept works, but it's important to add a feature that encrypts user stored conversations and uploaded images just in case the user forgets to delete this data when sharing the app. This can be implemented using Python's cryptography library.
 
+<br>
+
+## Thumb-Drive App (TDA)
+### AI on a stick - for places where there's no internet.
+
+- A method to deploy portable self-contained AI apps in places where there's no internet.
+- Bundles the AI model and all binary executables together with the app - including Ollama.
+- Only the first install requires an internet connection. Double-click to install.
+- Copies of the installed app can be shared using a thumb-drive or AirDrop.
+- All dependencies travel with the copy. No installation necessary. Double-click to run.
+- Runs completely offline.
+- Can be run on an external SSD.
+- Runs in a virtual environment so other software on the user's computer is not disturbed.
+- User data is encrypted.
+
+I converted the MedAi Console into a Thumb-Drive App (TDA).<br>
+It can be downloaded from Kaggle:<br>
+https://www.kaggle.com/datasets/vbookshelf/v2-0-offline-medai-console-thumb-drive-app/
 
 <br>
 
