@@ -331,7 +331,8 @@ FileVault is a built-in macOS security feature that provides full-disk encryptio
 
 <strong>Set Ollama to Airplane Mode</strong>
 
-To maximize privacy, please ensure that Ollama is set to Airplane mode. But, take note that this only disables Turbo mode and web search features. It does not block all network access. Also, Ollama automatically downloads new versions. There's no way to turn this off.
+To maximize privacy, please ensure that Ollama is set to Airplane mode. But, take note that this only disables Turbo mode and web search features. It does not block all network access. Also, Ollama automatically downloads new versions. ~There's no way to turn this off.~<br>
+Turn off auto downloads in the settings menu.
 
 <i>Ollama > Settings</i>
 
@@ -406,6 +407,8 @@ I initially thought that the solution was to remove Ollama and use MLX as the in
 
 This solves the 'uncontrolled downloads" issue, and it means that the user will not need to install Ollama separately. The binaries for ffmpeg and UV can also be bundled with the app. This creates a true "double-click to install" experience. It also means that once installed, the app can be shared with others using a thumb-drive or via AirDrop. I call this fully packaged app concept a Thumb Drive App (TDA). A TDA can be useful in low resource settings where there's no internet or where internet data is expensive.
 
+<i>Update (5-Mar-2026): Ollama has added a toggle, in the settings menu, to turn off auto download of updates.</i><br>
+<i>Ollama > Settings</i>
 
 <br>
 
