@@ -332,7 +332,7 @@ FileVault is a built-in macOS security feature that provides full-disk encryptio
 <strong>Set Ollama to Airplane Mode</strong>
 
 To maximize privacy, please ensure that Ollama is set to Airplane mode. But, take note that this only disables Turbo mode and web search features. It does not block all network access. Also, Ollama automatically downloads new versions. ~There's no way to turn this off.~<br>
-Turn off auto downloads in the settings menu.
+Update (5-Mar-2026): You can now turn off Auto-download-updates in the settings menu.
 
 <i>Ollama > Settings</i>
 
