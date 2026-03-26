@@ -413,6 +413,7 @@ This solves the 'uncontrolled downloads" issue, and it means that the user will 
 <br>
 
 ## Thumb-Drive App (TDA)
+Plug-and-play AI for macOS.
 
 - A method to deploy portable self-contained AI apps in places where there's no internet.
 - Bundles the AI model, the Ollama binary, the uv binary, the Python interpreter and the wheels for all Python packages.
