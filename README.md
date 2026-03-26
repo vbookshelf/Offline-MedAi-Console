@@ -413,21 +413,27 @@ This solves the 'uncontrolled downloads" issue, and it means that the user will 
 <br>
 
 ## Thumb-Drive App (TDA)
-### AI on a stick - for people who don't have internet access.
 
 - A method to deploy portable self-contained AI apps in places where there's no internet.
-- Bundles the AI model and all binary executables together with the app - including Ollama.
-- Only the first install requires an internet connection. Double-click to install.
+- Bundles the AI model, the Ollama binary, the uv binary, the Python interpreter and the wheels for all Python packages.
 - Copies of the installed app can be shared using a thumb-drive or AirDrop.
 - All dependencies travel with the copy. No installation necessary. Double-click to run.
 - Runs completely offline.
 - Can be run on an external SSD.
 - Runs in a virtual environment so other software on the user's computer is not disturbed.
 - User data is encrypted. Protects against accidental data leaks.
+- Compuational environments can also be bundled using this approach.
+- HuggingFace Datasets can be used as an app store to store and distribute TDAs.
 
-The MedAi Console v2.0 has been converted into a Thumb-Drive App (TDA).<br>
-The 520 MB file size exceeds the GitHub limit therefore, the app is stored in a Kaggle dataset:<br>
-https://www.kaggle.com/datasets/vbookshelf/v2-0-offline-medai-console-thumb-drive-app/
+Concept Writeup:<br>
+https://github.com/vbookshelf/Thumb-Drive-App-Concept
+
+This is a working example.<br>
+AI-On-A-Stick<br>
+https://huggingface.co/datasets/vbookshelf/Ai-On-A-Stick-TDA
+
+More examples of TDAs and bundled computational environments are available on HuggingFace:<br>
+https://huggingface.co/vbookshelf
 
 <br>
 
