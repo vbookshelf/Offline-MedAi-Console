@@ -15,6 +15,9 @@ Kaggle Writeup<br>
 The MedGemma Impact Challenge<br>
 https://www.kaggle.com/competitions/med-gemma-impact-challenge/writeups/offline-medai-console
 
+Download the fully packaged app from Hugging Face<br>
+https://huggingface.co/datasets/vbookshelf/Offline-MedAi-Console-TDA
+
 
 <br>
 <br>
